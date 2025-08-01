@@ -28,11 +28,12 @@ const AboutPage = () => {
         <div className="container mx-auto px-5 max-w-[1200px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <ScrollAnimation animation="slide-in-left">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <div className="text-center text-primary-foreground p-8">
-                  <h3 className="text-2xl font-bold mb-4">Naše včelnice</h3>
-                  <p className="text-lg opacity-90">Rozkvetlé louky Českomoravské vrchoviny</p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/54f5fbc3-f416-48e1-a918-3d7af5366e79.png"
+                  alt="Včelnice v lese"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </ScrollAnimation>
 
@@ -79,11 +80,12 @@ const AboutPage = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animation="slide-in-right">
-              <div className="aspect-[4/3] bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
-                <div className="text-center text-primary p-8">
-                  <h3 className="text-2xl font-bold mb-4">Naše úly</h3>
-                  <p className="text-lg">Moderní včelí domovy</p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/64b3e077-193e-499a-ba35-1b4651181cc2.png"
+                  alt="Včelnice u statku"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </ScrollAnimation>
           </div>

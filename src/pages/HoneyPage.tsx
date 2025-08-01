@@ -49,8 +49,12 @@ const HoneyPage = () => {
               <ScrollAnimation key={index} animation="fade-in" delay={index * 200}>
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                    <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
-                      <honey.icon className="text-primary w-24 h-24" />
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                      <img 
+                        src={index === 0 ? "/lovable-uploads/97d77a5f-2635-4ebe-84d3-6931c7d78f17.png" : "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png"}
+                        alt={index === 0 ? "Práce s úly" : "Květy pro včely"}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
@@ -116,11 +120,12 @@ const HoneyPage = () => {
         <div className="container mx-auto px-5 max-w-[1200px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <ScrollAnimation animation="slide-in-left">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary rounded-lg flex items-center justify-center">
-                <div className="text-center text-primary p-8">
-                  <h3 className="text-2xl font-bold mb-4">Naše úly</h3>
-                  <p className="text-lg">50+ včelstev v přírodě</p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/0b66bf50-89ff-4f01-bb65-989583bc0630.png"
+                  alt="Včelaři při práci"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </ScrollAnimation>
 

@@ -34,8 +34,14 @@ const MVFarmaProduce = () => {
           {honeyTypes.map((honey, index) => (
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-                <div className="bg-gradient-to-br from-accent to-secondary p-8">
-                  <honey.icon className="text-primary w-16 h-16 mb-4" />
+                <div className="aspect-[3/2] relative overflow-hidden">
+                  <img 
+                    src={index === 0 ? "/lovable-uploads/c2c6f111-8b0d-40b0-94ac-b52e9992d935.png" : "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png"}
+                    alt={index === 0 ? "Podzimní včelnice" : "Květy pro včely"}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">{honey.title}</h3>
                   <p className="text-muted-foreground text-lg leading-relaxed mb-4">{honey.description}</p>
                   <div className="text-2xl font-bold text-primary">{honey.price}</div>
