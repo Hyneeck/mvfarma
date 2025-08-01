@@ -1,5 +1,5 @@
 import React from 'react';
-import { Droplets, Flower2, TreePine, Sparkles } from 'lucide-react';
+import { Flower2, TreePine } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimation';
 
 const MVFarmaProduce = () => {
@@ -8,25 +8,13 @@ const MVFarmaProduce = () => {
       title: "Medovicový med",
       description: "Tmavý med z lesních stromů s bohatou chutí a vysokým obsahem minerálů",
       icon: TreePine,
-      features: ["Vysoký obsah antioxidantů", "Dlouhá trvanlivost", "Ideální na zimu"]
+      price: "Od 220 Kč"
     },
     {
       title: "Květový med",
       description: "Světlý med z lučních květů s jemnou chutí a květinovou vůní",
       icon: Flower2,
-      features: ["Jemná chuť", "Rychle krystalizuje", "Perfektní na palačinky"]
-    },
-    {
-      title: "Lipový med",
-      description: "Vzácný med s charakteristickou chutí a léčivými účinky",
-      icon: Sparkles,
-      features: ["Léčivé účinky", "Výjimečná chuť", "Limitovaná edice"]
-    },
-    {
-      title: "Pastovaný med",
-      description: "Krémový med snadno roztíratelný, ideální na chleba",
-      icon: Droplets,
-      features: ["Krémová konzistence", "Neroztéká se", "Oblíbený u dětí"]
+      price: "Od 180 Kč"
     }
   ];
 
@@ -35,32 +23,22 @@ const MVFarmaProduce = () => {
       <div className="container mx-auto px-5 max-w-[1200px]">
         <ScrollAnimation animation="fade-in">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Medy a včely</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Naše včely pracují po celou sezónu, aby vám přinesly nejkvalitnější med. 
-              Každý druh má svou jedinečnou chuť a vlastnosti.
+              Objevte naši nabídku kvalitních medů z čisté přírody Českomoravské vrchoviny
             </p>
           </div>
         </ScrollAnimation>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           {honeyTypes.map((honey, index) => (
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="bg-gradient-to-br from-accent to-secondary p-8">
                   <honey.icon className="text-primary w-16 h-16 mb-4" />
                   <h3 className="text-2xl font-bold text-foreground mb-3">{honey.title}</h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed">{honey.description}</p>
-                </div>
-                <div className="p-6">
-                  <ul className="space-y-2">
-                    {honey.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-foreground">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-muted-foreground text-lg leading-relaxed mb-4">{honey.description}</p>
+                  <div className="text-2xl font-bold text-primary">{honey.price}</div>
                 </div>
               </div>
             </ScrollAnimation>

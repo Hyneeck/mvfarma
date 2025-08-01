@@ -28,25 +28,22 @@ const MVFarmaStory = () => {
           <ScrollAnimation animation="slide-in-right">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                Tradice od roku 1990
+                Náš příběh
               </h3>
               <p className="text-lg text-foreground mb-6 leading-relaxed">
-                Naše včelařství vzniklo z lásky k přírodě a chuti sdílet s ostatními 
-                to nejlepší, co nám včely dokážou dát. Začínali jsme s několika úly 
-                a postupně jsme vyrostli na rodinnou farmu s 30 včelstvy.
+                Naše včelařská cesta začala před mnoha lety, kdy jsme se rozhodli navázat na rodinnou tradici včelaření. S každým rokem rosteme, učíme se od včel a zdokonalujeme naše postupy.
               </p>
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Věříme v tradiční postupy, šetrné nakládání s přírodou a transparentnost. 
-                Každý zákazník může navštívit naši farmu a vidět, jak pracujeme.
+                Dnes se staráme o desítky včelstev v čistém prostředí Českomoravské vrchoviny, kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
               </p>
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-card rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-primary">30+</div>
+                  <div className="text-2xl font-bold text-primary">50+</div>
                   <div className="text-sm text-muted-foreground">Včelstev</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg border border-border">
-                  <div className="text-2xl font-bold text-primary">33</div>
+                  <div className="text-2xl font-bold text-primary">30+</div>
                   <div className="text-sm text-muted-foreground">Let zkušeností</div>
                 </div>
               </div>
@@ -54,36 +51,33 @@ const MVFarmaStory = () => {
           </ScrollAnimation>
         </div>
 
-        <ScrollAnimation animation="fade-in">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <MapPin className="text-primary w-12 h-12 mx-auto mb-4" />
-              <h4 className="font-bold text-foreground mb-2">Nový Bydžov</h4>
-              <p className="text-muted-foreground text-sm">Krásná krajina Východních Čech</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <ScrollAnimation animation="slide-in-left">
+            <div className="aspect-[4/3] bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+              <div className="text-center text-primary-foreground p-8">
+                <h3 className="text-2xl font-bold mb-4">Naše včelstva</h3>
+                <p className="text-lg opacity-90">Českomoravská vrchovina</p>
+              </div>
             </div>
+          </ScrollAnimation>
 
-            <div className="text-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <Users className="text-primary w-12 h-12 mx-auto mb-4" />
-              <h4 className="font-bold text-foreground mb-2">Rodinná farma</h4>
-              <p className="text-muted-foreground text-sm">Generace zkušeností a tradice</p>
+          <ScrollAnimation animation="slide-in-right">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Naše včelstva
+              </h3>
+              <p className="text-lg text-foreground mb-6 leading-relaxed">
+                V současné době pečujeme o více než 50 včelstev, která jsou rozmístěna na několika stanovištích v čisté přírodě Českomoravské vrchoviny. Každé stanoviště je pečlivě vybráno s ohledem na dostupnost různorodé pastvy pro včely.
+              </p>
+              <p className="text-lg text-foreground mb-8 leading-relaxed">
+                Naše úly jsou vyrobeny z kvalitního smrkového dřeva a jsou pravidelně udržovány. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
+              </p>
             </div>
-
-            <div className="text-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <Clock className="text-primary w-12 h-12 mx-auto mb-4" />
-              <h4 className="font-bold text-foreground mb-2">Celý rok</h4>
-              <p className="text-muted-foreground text-sm">Péče o včely ve všech sezónach</p>
-            </div>
-
-            <div className="text-center p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-              <Heart className="text-primary w-12 h-12 mx-auto mb-4" />
-              <h4 className="font-bold text-foreground mb-2">S láskou</h4>
-              <p className="text-muted-foreground text-sm">Každý úl je pro nás důležitý</p>
-            </div>
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </div>
 
         <ScrollAnimation animation="fade-in">
-          <div className="text-center mt-16">
+          <div className="text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
               Naše hodnoty
             </h3>

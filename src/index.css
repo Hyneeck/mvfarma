@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 47 92% 98%; /* White #FCFCFC */
     --popover-foreground: 18 23% 31%; /* Liver #654236 */
 
-    --primary: 203 93% 14%; /* Prussian Blue #032B43 */
+    --primary: 0 0% 0%; /* Black #000000 */
     --primary-foreground: 47 92% 98%; /* White #FCFCFC */
 
     --secondary: 50 56% 88%; /* Eggshell #F1EAD5 */
@@ -28,25 +28,25 @@ All colors MUST be HSL.
     --muted-foreground: 18 23% 31%; /* Liver #654236 */
 
     --accent: 45 83% 91%; /* Cornsilk #FDF3D6 */
-    --accent-foreground: 203 93% 14%; /* Prussian Blue #032B43 */
+    --accent-foreground: 0 0% 0%; /* Black #000000 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 47 92% 98%;
 
     --border: 50 56% 88%; /* Eggshell #F1EAD5 */
     --input: 50 56% 88%; /* Eggshell #F1EAD5 */
-    --ring: 203 93% 14%; /* Prussian Blue #032B43 */
+    --ring: 0 0% 0%; /* Black #000000 */
 
     --radius: 0.5rem;
 
     --sidebar-background: 47 92% 98%;
     --sidebar-foreground: 18 23% 31%;
-    --sidebar-primary: 203 93% 14%;
+    --sidebar-primary: 0 0% 0%;
     --sidebar-primary-foreground: 47 92% 98%;
     --sidebar-accent: 45 83% 91%;
-    --sidebar-accent-foreground: 203 93% 14%;
+    --sidebar-accent-foreground: 0 0% 0%;
     --sidebar-border: 50 56% 88%;
-    --sidebar-ring: 203 93% 14%;
+    --sidebar-ring: 0 0% 0%;
   }
 
   .dark {
