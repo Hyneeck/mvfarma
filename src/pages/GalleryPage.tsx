@@ -91,10 +91,6 @@ const GalleryPage = () => {
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-2">{image.title}</h3>
-                    <p className="text-muted-foreground text-sm">{image.description}</p>
-                  </div>
                 </div>
               </ScrollAnimation>
             ))}

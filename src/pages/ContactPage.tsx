@@ -103,13 +103,18 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="mt-8 aspect-[4/3] bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
-                  <div className="text-center text-primary">
-                    <MapPin size={48} className="mx-auto mb-4" />
-                    <p className="text-lg font-medium">Mapa bude zde</p>
-                    <p className="text-sm opacity-80">Nový Bydžov, Českomoravská vrchovina</p>
-                  </div>
+                {/* Map */}
+                <div className="mt-8 aspect-[4/3] rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81873.85937404147!2d15.751234!3d50.241667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dccc9c9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2zU3TDoXLDoSBTa8WZZW7DocWZ!5e0!3m2!1scs!2scz!4v1640995200000"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa - Stará Skřeněř"
+                  />
                 </div>
               </div>
             </ScrollAnimation>
