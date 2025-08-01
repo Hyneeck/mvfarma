@@ -36,7 +36,7 @@ const MVFarmaProduce = () => {
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="aspect-[3/2] relative overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                   <img 
-                    src={index === 0 ? "/lovable-uploads/2dbe505c-79e3-44bd-ae07-cf205979b6e1.png" : "/lovable-uploads/436c86ed-192e-4b32-bd4f-3d314897bff6.png"}
+                    src={index === 0 ? "/lovable-uploads/2dbe505c-79e3-44bd-ae07-cf205979b6e1.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
                     alt={index === 0 ? "Medovicový med" : "Květový med"}
                     className="max-w-full max-h-full object-contain"
                   />
