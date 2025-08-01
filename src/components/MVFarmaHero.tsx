@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Leaf, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ScrollAnimation from './ScrollAnimation';
 
 const MVFarmaHero = () => {
@@ -22,12 +22,18 @@ const MVFarmaHero = () => {
 
         <ScrollAnimation animation="fade-in" delay={200}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg">
+            <Link 
+              to="/o-nas"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
+            >
               O naší farmě
-            </button>
-            <button className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg">
+            </Link>
+            <Link 
+              to="/medy-a-vcely"
+              className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
+            >
               Naše produkty
-            </button>
+            </Link>
           </div>
         </ScrollAnimation>
       </div>
