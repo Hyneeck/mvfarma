@@ -1,67 +1,84 @@
 import React from 'react';
-import { Hexagon, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 const MVFarmaFooter = () => {
   return (
-    <footer className="bg-foreground text-background py-12">
-      <div className="container mx-auto px-5 max-w-[1200px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Logo a popis */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <Hexagon className="text-accent w-8 h-8 fill-current" />
-              <span className="font-bold text-xl text-background">MVFarma</span>
+    <footer className="bg-card border-t border-border">
+      <div className="container mx-auto px-5 max-w-[1200px] py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo and Description */}
+          <div className="md:col-span-1">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">MV</span>
+              </div>
+              <span className="text-xl font-bold text-primary">MVFarma</span>
             </div>
-            <p className="text-background/80 leading-relaxed mb-4">
-              Rodinné včelařství z Nového Bydžova. Od roku 1990 přinášíme 
-              nejkvalitnější český med přímo z našich úlů k vašemu stolu.
-            </p>
-            <p className="text-accent font-medium">
-              "Z úlu rovnou k vám"
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Rodinné včelařství z Českomoravské vrchoviny. Kvalitní med s láskou k přírodě a včelám.
             </p>
           </div>
 
-          {/* Rychlé odkazy */}
+          {/* Navigation */}
           <div>
-            <h3 className="font-bold text-background mb-4">Rychlé odkazy</h3>
-            <nav className="space-y-2">
-              <a href="#home" className="block text-background/80 hover:text-accent transition-colors duration-200">Domů</a>
-              <a href="#o-nas" className="block text-background/80 hover:text-accent transition-colors duration-200">O nás</a>
-              <a href="#medy-a-vcely" className="block text-background/80 hover:text-accent transition-colors duration-200">Medy a včely</a>
-              <a href="#fotogalerie" className="block text-background/80 hover:text-accent transition-colors duration-200">Fotogalerie</a>
-              <a href="#blog" className="block text-background/80 hover:text-accent transition-colors duration-200">Blog</a>
-              <a href="#kontakt" className="block text-background/80 hover:text-accent transition-colors duration-200">Kontakt</a>
-            </nav>
+            <h4 className="font-bold text-foreground mb-4">Navigace</h4>
+            <ul className="space-y-2">
+              <li><Link to="/" className="text-muted-foreground hover:text-primary transition-colors text-sm">Domů</Link></li>
+              <li><Link to="/o-nas" className="text-muted-foreground hover:text-primary transition-colors text-sm">O nás</Link></li>
+              <li><Link to="/medy-a-vcely" className="text-muted-foreground hover:text-primary transition-colors text-sm">Medy a včely</Link></li>
+              <li><Link to="/fotogalerie" className="text-muted-foreground hover:text-primary transition-colors text-sm">Fotogalerie</Link></li>
+              <li><Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors text-sm">Blog</Link></li>
+              <li><Link to="/kontakt" className="text-muted-foreground hover:text-primary transition-colors text-sm">Kontakt</Link></li>
+            </ul>
           </div>
 
-          {/* Kontaktní informace */}
+          {/* Products */}
           <div>
-            <h3 className="font-bold text-background mb-4">Kontakt</h3>
+            <h4 className="font-bold text-foreground mb-4">Naše produkty</h4>
+            <ul className="space-y-2">
+              <li><Link to="/medy-a-vcely" className="text-muted-foreground hover:text-primary transition-colors text-sm">Květový med</Link></li>
+              <li><Link to="/medy-a-vcely" className="text-muted-foreground hover:text-primary transition-colors text-sm">Medovicový med</Link></li>
+              <li><Link to="/medy-a-vcely" className="text-muted-foreground hover:text-primary transition-colors text-sm">Včelí vosk</Link></li>
+              <li><Link to="/medy-a-vcely" className="text-muted-foreground hover:text-primary transition-colors text-sm">Propolis</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-bold text-foreground mb-4">Kontakt</h4>
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-background/80">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm">Nový Bydžov 503 01</span>
+              <div className="flex items-start space-x-2">
+                <MapPin size={16} className="text-primary mt-0.5 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm">
+                  Nový Bydžov<br />
+                  Českomoravská vrchovina
+                </span>
               </div>
-              <div className="flex items-center gap-2 text-background/80">
-                <Phone className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm">+420 123 456 789</span>
+              <div className="flex items-center space-x-2">
+                <Phone size={16} className="text-primary flex-shrink-0" />
+                <span className="text-muted-foreground text-sm">+420 777 123 456</span>
               </div>
-              <div className="flex items-center gap-2 text-background/80">
-                <Mail className="w-4 h-4 text-accent flex-shrink-0" />
-                <span className="text-sm">info@mvfarma.cz</span>
+              <div className="flex items-center space-x-2">
+                <Mail size={16} className="text-primary flex-shrink-0" />
+                <span className="text-muted-foreground text-sm">info@mvfarma.cz</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Spodní lišta */}
-        <div className="border-t border-background/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/60">
-            <p>© 2023 MVFarma. Všechna práva vyhrazena.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-accent transition-colors duration-200">Ochrana osobních údajů</a>
-              <a href="#" className="hover:text-accent transition-colors duration-200">Obchodní podmínky</a>
-            </div>
+        {/* Bottom Bar */}
+        <div className="border-t border-border mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-muted-foreground text-sm">
+            © 2024 MVFarma. Všechna práva vyhrazena.
+          </p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Facebook size={20} />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Instagram size={20} />
+            </a>
           </div>
         </div>
       </div>

@@ -26,33 +26,37 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
             <ScrollAnimation animation="slide-in-left">
-              <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-                  <Flower2 className="text-primary w-16 h-16" />
+              <Link to="/medy-a-vcely" className="group block">
+                <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
+                    <Flower2 className="text-primary w-16 h-16" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Květový med</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Jemný a voňavý med z různorodých květů našich luk
+                    </p>
+                    <div className="text-2xl font-bold text-primary">Od 180 Kč</div>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3">Květový med</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Jemný a voňavý med z různorodých květů našich luk
-                  </p>
-                  <div className="text-2xl font-bold text-primary">Od 180 Kč</div>
-                </div>
-              </div>
+              </Link>
             </ScrollAnimation>
 
             <ScrollAnimation animation="slide-in-right" delay={100}>
-              <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
-                  <TreePine className="text-primary w-16 h-16" />
+              <Link to="/medy-a-vcely" className="group block">
+                <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
+                    <TreePine className="text-primary w-16 h-16" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Medovicový med</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Tmavý med s bohatou chutí z lesních medoviček
+                    </p>
+                    <div className="text-2xl font-bold text-primary">Od 220 Kč</div>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3">Medovicový med</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Tmavý med s bohatou chutí z lesních medoviček
-                  </p>
-                  <div className="text-2xl font-bold text-primary">Od 220 Kč</div>
-                </div>
-              </div>
+              </Link>
             </ScrollAnimation>
           </div>
 

@@ -1,63 +1,102 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Hexagon } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 const MVFarmaHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const navigationItems = [
+    { name: 'Domů', path: '/' },
+    { name: 'O nás', path: '/o-nas' },
+    { name: 'Medy a včely', path: '/medy-a-vcely' },
+    { name: 'Fotogalerie', path: '/fotogalerie' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Kontakt', path: '/kontakt' }
+  ];
+
+  const isActivePath = (path: string) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
+  };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-5 py-4">
-        <div className="flex justify-between items-center">
+      <div className="container mx-auto px-5 max-w-[1200px]">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Hexagon className="text-primary w-8 h-8 fill-current" />
-            <span className="font-bold text-xl text-primary">MVFarma</span>
-          </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">MV</span>
+            </div>
+            <span className="text-xl md:text-2xl font-bold text-primary">MVFarma</span>
+          </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors duration-200">Domů</a>
-            <a href="#o-nas" className="text-foreground hover:text-primary transition-colors duration-200">O nás</a>
-            <a href="#medy-a-vcely" className="text-foreground hover:text-primary transition-colors duration-200">Medy a včely</a>
-            <a href="#fotogalerie" className="text-foreground hover:text-primary transition-colors duration-200">Fotogalerie</a>
-            <a href="#blog" className="text-foreground hover:text-primary transition-colors duration-200">Blog</a>
-            <a href="#kontakt" className="text-foreground hover:text-primary transition-colors duration-200">Kontakt</a>
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`font-medium transition-colors hover:text-primary ${
+                  isActivePath(item.path) 
+                    ? 'text-primary' 
+                    : isScrolled 
+                      ? 'text-foreground' 
+                      : 'text-foreground'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            onClick={toggleMenu}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors duration-200"
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? (
+              <X size={24} className={isScrolled ? 'text-foreground' : 'text-foreground'} />
+            ) : (
+              <Menu size={24} className={isScrolled ? 'text-foreground' : 'text-foreground'} />
+            )}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 animate-fade-in">
-            <div className="flex flex-col gap-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>Domů</a>
-              <a href="#o-nas" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>O nás</a>
-              <a href="#medy-a-vcely" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>Medy a včely</a>
-              <a href="#fotogalerie" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>Fotogalerie</a>
-              <a href="#blog" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>Blog</a>
-              <a href="#kontakt" className="text-foreground hover:text-primary transition-colors duration-200 py-2" onClick={toggleMenu}>Kontakt</a>
-            </div>
-          </nav>
+          <div className="md:hidden bg-background border-t border-border">
+            <nav className="py-4 space-y-2">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`block px-4 py-2 font-medium transition-colors hover:text-primary hover:bg-accent/50 rounded ${
+                    isActivePath(item.path) ? 'text-primary bg-accent/50' : 'text-foreground'
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
         )}
       </div>
     </header>
