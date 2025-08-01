@@ -9,40 +9,40 @@ const GalleryPage = () => {
 
   const images = [
     {
-      src: "/placeholder.svg",
-      alt: "Včely na plástech",
-      title: "Včely pracující na plástech",
-      description: "Naše včely při práci na stavbě nových plástů"
+      src: "/lovable-uploads/54f5fbc3-f416-48e1-a918-3d7af5366e79.png",
+      alt: "Včelnice v lese",
+      title: "Včelnice v lese",
+      description: "Úly rozmístěné v krásném lesním prostředí"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Včelnice v krajině",
-      title: "Včelnice v přírodě",
-      description: "Úly rozmístěné v krásné krajině Českomoravské vrchoviny"
+      src: "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png",
+      alt: "Květy pro včely",
+      title: "Květy pro včely",
+      description: "Jablečné květy poskytují včelám výživu"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Stáčení medu",
-      title: "Proces stáčení medu",
-      description: "Tradiční postupy zpracování medu"
+      src: "/lovable-uploads/c2c6f111-8b0d-40b0-94ac-b52e9992d935.png",
+      alt: "Podzimní včelnice",
+      title: "Podzimní včelnice",
+      description: "Úly v podzimní krajině"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Květiny pro včely",
-      title: "Pastva pro včely",
-      description: "Bohaté květinové louky poskytují včelám výživu"
+      src: "/lovable-uploads/0b66bf50-89ff-4f01-bb65-989583bc0630.png",
+      alt: "Včelaři při práci",
+      title: "Včelaři při práci",
+      description: "Péče o včelstva v ochranných oblecích"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Včelař při práci",
-      title: "Péče o včelstva",
-      description: "Kontrola a údržba včelích úlů"
+      src: "/lovable-uploads/64b3e077-193e-499a-ba35-1b4651181cc2.png",
+      alt: "Včelnice u statku",
+      title: "Včelnice u statku",
+      description: "Úly umístěné v blízkosti tradičního statku"
     },
     {
-      src: "/placeholder.svg",
-      alt: "Med v sklenicích",
-      title: "Hotový produkt",
-      description: "Náš kvalitní med připravený pro zákazníky"
+      src: "/lovable-uploads/97d77a5f-2635-4ebe-84d3-6931c7d78f17.png",
+      alt: "Práce s úly",
+      title: "Práce s úly",
+      description: "Kontrola a údržba včelích úlů v přírodě"
     }
   ];
 
