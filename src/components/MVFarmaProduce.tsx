@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flower2, TreePine } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimation';
+import OptimizedImage from './OptimizedImage';
 
 const MVFarmaProduce = () => {
   const honeyTypes = [
@@ -35,9 +36,9 @@ const MVFarmaProduce = () => {
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="aspect-[3/2] relative overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                  <img 
+                  <OptimizedImage 
                     src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
-                    alt={index === 0 ? "Medovicový med" : "Květový med"}
+                    alt={index === 0 ? "Medovicový med z MVFarma - tmavý med z lesních medoviček" : "Květový med z MVFarma - světlý med z lučních květů"}
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>

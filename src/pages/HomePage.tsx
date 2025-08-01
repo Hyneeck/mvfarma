@@ -4,11 +4,19 @@ import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaHero from '../components/MVFarmaHero';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
+import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 import { Flower2, TreePine } from 'lucide-react';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="MVFarma - Poctivý med z Českomoravské vrchoviny"
+        description="MVFarma nabízí kvalitní med z čisté přírody Českomoravské vrchoviny. Objevte naše medovicové a květové medy z 30 úlů v okolí Nového Bydžova."
+        keywords="med, včelařství, MVFarma, medovicový med, květový med, Českomoravská vrchovina, Nový Bydžov"
+        url="https://mvfarma.cz"
+      />
       <MVFarmaHeader />
       <MVFarmaHero />
       
@@ -29,9 +37,9 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
-                    <img 
+                    <OptimizedImage 
                       src="/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"
-                      alt="Květový med"
+                      alt="Květový med z MVFarma - světlý med z lučních květů"
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
@@ -50,9 +58,9 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
-                    <img 
+                    <OptimizedImage 
                       src="/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png"
-                      alt="Medovicový med"
+                      alt="Medovicový med z MVFarma - tmavý med z lesních medoviček"
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>

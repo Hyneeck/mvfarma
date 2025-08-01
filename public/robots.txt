@@ -12,3 +12,17 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemaps
+Sitemap: https://mvfarma.cz/sitemap.xml
+
+# Allow crawling of important pages
+Allow: /
+Allow: /o-nas
+Allow: /medy-a-vcely
+Allow: /fotogalerie
+Allow: /blog
+Allow: /kontakt
+
+# Crawl-delay for better server performance
+Crawl-delay: 1

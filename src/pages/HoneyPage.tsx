@@ -2,6 +2,8 @@ import React from 'react';
 import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
+import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
 
 const HoneyPage = () => {
@@ -24,6 +26,12 @@ const HoneyPage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Medy a včely - MVFarma | Kvalitní med z Českomoravské vrchoviny"
+        description="Objevte svět našich včel a kvalitních medů z čisté přírody. Medovicový a květový med z 30 úlů rozmístěných v okolí Nového Bydžova."
+        keywords="medovicový med, květový med, včelařství, MVFarma, med z lesa, med z luk, Český med"
+        url="https://mvfarma.cz/medy-a-vcely"
+      />
       <MVFarmaHeader />
       
       {/* Hero Section */}
@@ -50,9 +58,9 @@ const HoneyPage = () => {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                      <img 
+                      <OptimizedImage 
                         src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
-                        alt={index === 0 ? "Medovicový med" : "Květový med"}
+                        alt={index === 0 ? "Medovicový med z MVFarma - tmavý med z lesních medoviček s bohatou chutí" : "Květový med z MVFarma - světlý med z lučních květů s jemnou chutí"}
                         className="max-w-full max-h-full object-contain"
                       />
                     </div>
@@ -121,9 +129,9 @@ const HoneyPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <ScrollAnimation animation="slide-in-left">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/0b66bf50-89ff-4f01-bb65-989583bc0630.png"
-                  alt="Včelaři při práci"
+                  alt="Včelaři z MVFarma při práci s úly - péče o včelstva"
                   className="w-full h-full object-cover"
                 />
               </div>

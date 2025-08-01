@@ -2,10 +2,17 @@ import React from 'react';
 import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
+import SEO from '../components/SEO';
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="O naší farmě - MVFarma | Včelařství v Českomoravské vrchovině"
+        description="Seznamte se s MVFarma - rodinným včelařstvím z Nového Bydžova. Naše příběh, tradice a vášeň pro včelařství a výrobu kvalitního medu."
+        keywords="MVFarma, včelařství, rodinná farma, Nový Bydžov, Českomoravská vrchovina, tradice, včelaři"
+        url="https://mvfarma.cz/o-nas"
+      />
       <MVFarmaHeader />
       
       {/* Hero Section */}
