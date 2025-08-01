@@ -40,10 +40,16 @@ const MVFarmaHeader = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">MV</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img 
+                src={isScrolled ? "/lovable-uploads/00bddc36-b9e1-4b86-b531-66646e3994b4.png" : "/lovable-uploads/56b142a4-6a1c-4b75-b598-5a5d098a17c8.png"} 
+                alt="MVFarma Logo" 
+                className="w-10 h-10"
+              />
             </div>
-            <span className="text-xl md:text-2xl font-bold text-primary">MVFarma</span>
+            <span className={`text-xl md:text-2xl font-bold transition-colors ${
+              isScrolled ? 'text-foreground' : 'text-white'
+            }`}>MVFarma</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,7 +63,7 @@ const MVFarmaHeader = () => {
                     ? 'text-primary' 
                     : isScrolled 
                       ? 'text-foreground' 
-                      : 'text-foreground'
+                      : 'text-white'
                 }`}
               >
                 {item.name}
@@ -72,9 +78,9 @@ const MVFarmaHeader = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X size={24} className={isScrolled ? 'text-foreground' : 'text-foreground'} />
+              <X size={24} className={isScrolled ? 'text-foreground' : 'text-white'} />
             ) : (
-              <Menu size={24} className={isScrolled ? 'text-foreground' : 'text-foreground'} />
+              <Menu size={24} className={isScrolled ? 'text-foreground' : 'text-white'} />
             )}
           </button>
         </div>
