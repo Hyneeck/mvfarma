@@ -28,8 +28,12 @@ const HomePage = () => {
             <ScrollAnimation animation="slide-in-left">
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-                    <Flower2 className="text-primary w-16 h-16" />
+                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
+                    <img 
+                      src="/lovable-uploads/c4f5cce0-3927-4ce6-bf80-160570c8965d.png"
+                      alt="Květový med"
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Květový med</h3>
@@ -45,8 +49,12 @@ const HomePage = () => {
             <ScrollAnimation animation="slide-in-right" delay={100}>
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
-                    <TreePine className="text-primary w-16 h-16" />
+                  <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
+                    <img 
+                      src="/lovable-uploads/77b2b6bc-faaf-44e5-babe-ff29dd4a5a49.png"
+                      alt="Medovicový med"
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Medovicový med</h3>
