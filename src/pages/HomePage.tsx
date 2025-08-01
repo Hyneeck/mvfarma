@@ -30,7 +30,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                     <img 
-                      src="/lovable-uploads/c4f5cce0-3927-4ce6-bf80-160570c8965d.png"
+                      src="/lovable-uploads/436c86ed-192e-4b32-bd4f-3d314897bff6.png"
                       alt="Květový med"
                       className="max-w-full max-h-full object-contain"
                     />
@@ -51,7 +51,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                     <img 
-                      src="/lovable-uploads/77b2b6bc-faaf-44e5-babe-ff29dd4a5a49.png"
+                      src="/lovable-uploads/2dbe505c-79e3-44bd-ae07-cf205979b6e1.png"
                       alt="Medovicový med"
                       className="max-w-full max-h-full object-contain"
                     />
