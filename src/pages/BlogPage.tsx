@@ -13,7 +13,7 @@ const BlogPage = () => {
       excerpt: "Jakmile se oteplí, včely začínají být aktivnější. Podívejte se, jaké práce nás čekají na jaře a jak se připravujeme na novou sezónu.",
       date: "15. března 2024",
       readTime: "5 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/0b66bf50-89ff-4f01-bb65-989583bc0630.png"
     },
     {
       slug: "proc-je-med-tak-zdravy",
@@ -21,7 +21,7 @@ const BlogPage = () => {
       excerpt: "Med není jen sladidlo. Obsahuje mnoho vitamínů, minerálů a antioxidantů. Zjistěte, proč by měl být součástí vaší stravy.",
       date: "28. února 2024",
       readTime: "7 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png"
     },
     {
       slug: "zimovani-vcel",
@@ -29,7 +29,7 @@ const BlogPage = () => {
       excerpt: "Zimování včel je fascinující proces. Včely se shromáždí do klubka a společně si udržují teplo. Přečtěte si více o jejich zimní strategii.",
       date: "12. ledna 2024",
       readTime: "6 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/c2c6f111-8b0d-40b0-94ac-b52e9992d935.png"
     },
     {
       slug: "druhy-medu-a-jejich-vlastnosti",
@@ -37,7 +37,7 @@ const BlogPage = () => {
       excerpt: "Každý druh medu má své specifické vlastnosti a chuť. Poradíme vám, jak poznat kvalitní med a k čemu který druh používat.",
       date: "5. prosince 2023",
       readTime: "8 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/97d77a5f-2635-4ebe-84d3-6931c7d78f17.png"
     },
     {
       slug: "vcelari-tradice-v-cechach",
@@ -45,7 +45,7 @@ const BlogPage = () => {
       excerpt: "Včelařství má v Čechách dlouhou tradici. Podívejte se s námi do historie a zjistěte, jak se včelařství vyvíjelo v našem regionu.",
       date: "18. listopadu 2023",
       readTime: "10 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/64b3e077-193e-499a-ba35-1b4651181cc2.png"
     },
     {
       slug: "jak-pomoci-vcelam",
@@ -53,7 +53,7 @@ const BlogPage = () => {
       excerpt: "I bez vlastního úlu můžete včelám pomoci. Poradíme vám, jaké rostliny vysadit a jak vytvořit včelám příjemné prostředí.",
       date: "3. října 2023",
       readTime: "4 min čtení",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/54f5fbc3-f416-48e1-a918-3d7af5366e79.png"
     }
   ];
 

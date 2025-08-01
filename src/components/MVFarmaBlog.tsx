@@ -41,8 +41,14 @@ const MVFarmaBlog = () => {
           {blogPosts.map((post, index) => (
             <ScrollAnimation key={index} animation="slide-in-left" delay={index * 100}>
               <article className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center">
-                  <BookOpen className="text-primary w-16 h-16" />
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img 
+                    src={index === 0 ? "/lovable-uploads/c2c6f111-8b0d-40b0-94ac-b52e9992d935.png" : 
+                         index === 1 ? "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png" :
+                         "/lovable-uploads/54f5fbc3-f416-48e1-a918-3d7af5366e79.png"}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
                 
                 <div className="p-6">
