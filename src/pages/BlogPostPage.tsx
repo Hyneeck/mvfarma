@@ -45,22 +45,22 @@ const BlogPostPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-accent to-secondary">
-        <div className="absolute inset-0 bg-primary/20"></div>
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png')"}}>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
             <div className="max-w-4xl mx-auto">
               <Link 
                 to="/blog"
-                className="inline-flex items-center text-primary hover:text-primary/80 transition-colors mb-6"
+                className="inline-flex items-center text-white hover:text-white/80 transition-colors mb-6"
               >
                 <ArrowLeft size={20} className="mr-2" />
                 Zpět na blog
               </Link>
-              <h1 className="text-3xl md:text-5xl font-bold text-primary mb-6">
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
                 {blogPost.title}
               </h1>
-              <div className="flex items-center justify-center text-muted-foreground mb-6 flex-wrap gap-4">
+              <div className="flex items-center justify-center text-white/80 mb-6 flex-wrap gap-4">
                 <div className="flex items-center">
                   <Calendar size={16} className="mr-2" />
                   <span>{blogPost.date}</span>

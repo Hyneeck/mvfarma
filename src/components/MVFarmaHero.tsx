@@ -4,16 +4,16 @@ import ScrollAnimation from './ScrollAnimation';
 
 const MVFarmaHero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-accent to-secondary">
-      <div className="absolute inset-0 bg-primary/10"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png')"}}>
+      <div className="absolute inset-0 bg-black/60"></div>
       
       <div className="container mx-auto px-5 relative z-10 text-center">
         <ScrollAnimation animation="fade-in">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Vítejte na MVFarma
             </h1>
-            <p className="text-xl md:text-2xl text-foreground mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
               Poctivý med z Českomoravské vrchoviny, s úctou k přírodě a včelám
             </p>
           </div>

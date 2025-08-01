@@ -27,14 +27,14 @@ const HoneyPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-accent to-secondary">
-        <div className="absolute inset-0 bg-primary/10"></div>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png')"}}>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Medy a včely
             </h1>
-            <p className="text-xl md:text-2xl text-foreground max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
               Objevte svět našich včel a kvalitních medů z čisté přírody
             </p>
           </ScrollAnimation>
