@@ -47,7 +47,7 @@ const MVFarmaHeader = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item) => (
+            {navigationItems.filter(item => item.path !== '/').map((item) => (
               <Link
                 key={item.path}
                 to={item.path}

@@ -24,13 +24,13 @@ const MVFarmaHero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/o-nas"
-              className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
+              className="bg-amber-100 text-black px-8 py-3 rounded-lg hover:bg-amber-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
             >
               O naší farmě
             </Link>
             <Link 
               to="/medy-a-vcely"
-              className="border-2 border-amber-600 text-amber-100 px-8 py-4 rounded-lg hover:bg-amber-600 hover:text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
+              className="border-2 border-amber-100 text-amber-100 px-8 py-3 rounded-lg hover:bg-amber-100 hover:text-black transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
             >
               Naše produkty
             </Link>
