@@ -49,11 +49,11 @@ const HoneyPage = () => {
               <ScrollAnimation key={index} animation="fade-in" delay={index * 200}>
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                       <img 
-                        src={index === 0 ? "/lovable-uploads/97d77a5f-2635-4ebe-84d3-6931c7d78f17.png" : "/lovable-uploads/becb71bc-a935-453e-99e1-ed42b99576c1.png"}
-                        alt={index === 0 ? "Práce s úly" : "Květy pro včely"}
-                        className="w-full h-full object-cover"
+                        src={index === 0 ? "/lovable-uploads/77b2b6bc-faaf-44e5-babe-ff29dd4a5a49.png" : "/lovable-uploads/c4f5cce0-3927-4ce6-bf80-160570c8965d.png"}
+                        alt={index === 0 ? "Medovicový med" : "Květový med"}
+                        className="max-w-full max-h-full object-contain"
                       />
                     </div>
                   </div>
