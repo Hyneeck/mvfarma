@@ -8,51 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* MVFarma Color Palette */
+    --background: 47 92% 98%; /* White #FCFCFC */
+    --foreground: 18 23% 31%; /* Liver #654236 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 47 92% 98%; /* White #FCFCFC */
+    --card-foreground: 18 23% 31%; /* Liver #654236 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 47 92% 98%; /* White #FCFCFC */
+    --popover-foreground: 18 23% 31%; /* Liver #654236 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 203 93% 14%; /* Prussian Blue #032B43 */
+    --primary-foreground: 47 92% 98%; /* White #FCFCFC */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 50 56% 88%; /* Eggshell #F1EAD5 */
+    --secondary-foreground: 18 23% 31%; /* Liver #654236 */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 50 56% 88%; /* Eggshell #F1EAD5 */
+    --muted-foreground: 18 23% 31%; /* Liver #654236 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 83% 91%; /* Cornsilk #FDF3D6 */
+    --accent-foreground: 203 93% 14%; /* Prussian Blue #032B43 */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 47 92% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 50 56% 88%; /* Eggshell #F1EAD5 */
+    --input: 50 56% 88%; /* Eggshell #F1EAD5 */
+    --ring: 203 93% 14%; /* Prussian Blue #032B43 */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 47 92% 98%;
+    --sidebar-foreground: 18 23% 31%;
+    --sidebar-primary: 203 93% 14%;
+    --sidebar-primary-foreground: 47 92% 98%;
+    --sidebar-accent: 45 83% 91%;
+    --sidebar-accent-foreground: 203 93% 14%;
+    --sidebar-border: 50 56% 88%;
+    --sidebar-ring: 203 93% 14%;
   }
 
   .dark {

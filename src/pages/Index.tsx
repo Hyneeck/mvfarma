@@ -1,25 +1,25 @@
 
 import React from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Story from '../components/Story';
-import Produce from '../components/Produce';
-import Journal from '../components/Journal';
-import Gallery from '../components/Gallery';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import MVFarmaHeader from '../components/MVFarmaHeader';
+import MVFarmaHero from '../components/MVFarmaHero';
+import MVFarmaStory from '../components/MVFarmaStory';
+import MVFarmaProduce from '../components/MVFarmaProduce';
+import MVFarmaBlog from '../components/MVFarmaBlog';
+import MVFarmaGallery from '../components/MVFarmaGallery';
+import MVFarmaContact from '../components/MVFarmaContact';
+import MVFarmaFooter from '../components/MVFarmaFooter';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <Story />
-      <Produce />
-      <Journal />
-      <Gallery />
-      <Contact />
-      <Footer />
+      <MVFarmaHeader />
+      <MVFarmaHero />
+      <MVFarmaStory />
+      <MVFarmaProduce />
+      <MVFarmaBlog />
+      <MVFarmaGallery />
+      <MVFarmaContact />
+      <MVFarmaFooter />
     </div>
   );
 };
