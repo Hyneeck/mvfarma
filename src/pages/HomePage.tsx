@@ -51,7 +51,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                     <img 
-                      src="/lovable-uploads/2dbe505c-79e3-44bd-ae07-cf205979b6e1.png"
+                      src="/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png"
                       alt="Medovicový med"
                       className="max-w-full max-h-full object-contain"
                     />
