@@ -6,14 +6,14 @@ import OptimizedImage from './OptimizedImage';
 const MVFarmaProduce = () => {
   const honeyTypes = [
     {
-      title: "Medovicový med",
-      description: "Tmavý med z lesních stromů s bohatou chutí a vysokým obsahem minerálů",
+      title: "Letní květový med",
+      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější",
       icon: TreePine,
       price: "Od 220 Kč"
     },
     {
-      title: "Květový med",
-      description: "Světlý med z lučních květů s jemnou chutí a květinovou vůní",
+      title: "Jarní květový med",
+      description: "Světlý med z jarních květů",
       icon: Flower2,
       price: "Od 180 Kč"
     }
@@ -36,11 +36,11 @@ const MVFarmaProduce = () => {
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="aspect-[3/2] relative overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                  <OptimizedImage 
-                    src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
-                    alt={index === 0 ? "Medovicový med z MVFarma - tmavý med z lesních medoviček" : "Květový med z MVFarma - světlý med z lučních květů"}
-                    className="max-w-full max-h-full object-contain"
-                  />
+                   <OptimizedImage 
+                     src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
+                     alt={index === 0 ? "Letní květový med z MVFarma - tmavší med z letní sklizně" : "Jarní květový med z MVFarma - světlý med z jarních květů"}
+                     className="max-w-full max-h-full object-contain"
+                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">{honey.title}</h3>

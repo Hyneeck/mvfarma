@@ -14,7 +14,7 @@ const MVFarmaHero = () => {
               Vítejte na MVFarma
             </h1>
             <p className="text-xl md:text-2xl text-amber-100 mb-8 leading-relaxed">
-              Poctivý med z Českomoravské vrchoviny, s úctou k přírodě a včelám
+              Poctivý med tradiční včelařské farmy, s úctou k přírodě a včelám
             </p>
           </div>
         </ScrollAnimation>

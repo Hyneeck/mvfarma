@@ -9,15 +9,15 @@ import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
 const HoneyPage = () => {
   const honeyTypes = [
     {
-      title: "Medovicový med",
-      description: "Tmavý med z lesních stromů s bohatou chutí a vysokým obsahem minerálů. Ideální pro zimní měsíce a posílení imunity.",
+      title: "Letní květový med",
+      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější.",
       icon: TreePine,
       price: "Od 220 Kč",
-      features: ["Vysoký obsah antioxidantů", "Dlouhá trvanlivost", "Ideální na zimu"]
+      features: ["Dlouhá trvanlivost", "Ideální na zimu", "Bohatá chuť"]
     },
     {
-      title: "Květový med",
-      description: "Světlý med z lučních květů s jemnou chutí a květinovou vůní. Perfektní pro každodenní užívání.",
+      title: "Jarní květový med",
+      description: "Světlý med z jarních květů s jemnou chutí a květinovou vůní. Perfektní pro každodenní užívání.",
       icon: Flower2,
       price: "Od 180 Kč",
       features: ["Jemná chuť", "Rychle krystalizuje", "Perfektní na palačinky"]
@@ -58,11 +58,11 @@ const HoneyPage = () => {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                      <OptimizedImage 
-                        src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
-                        alt={index === 0 ? "Medovicový med z MVFarma - tmavý med z lesních medoviček s bohatou chutí" : "Květový med z MVFarma - světlý med z lučních květů s jemnou chutí"}
-                        className="max-w-full max-h-full object-contain"
-                      />
+                       <OptimizedImage 
+                         src={index === 0 ? "/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png" : "/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"}
+                         alt={index === 0 ? "Letní květový med z MVFarma - tmavší med z letní sklizně" : "Jarní květový med z MVFarma - světlý med z jarních květů"}
+                         className="max-w-full max-h-full object-contain"
+                       />
                     </div>
                   </div>
                   <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>

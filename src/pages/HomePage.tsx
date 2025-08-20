@@ -37,17 +37,17 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
-                    <OptimizedImage 
-                      src="/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"
-                      alt="Květový med z MVFarma - světlý med z lučních květů"
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Květový med</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Jemný a voňavý med z různorodých květů našich luk
-                    </p>
+                     <OptimizedImage 
+                       src="/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"
+                       alt="Jarní květový med z MVFarma - světlý med z jarních květů"
+                       className="max-w-full max-h-full object-contain"
+                     />
+                   </div>
+                   <div className="p-6">
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
+                     <p className="text-muted-foreground mb-4">
+                       Světlý med z jarních květů
+                     </p>
                     <div className="text-2xl font-bold text-primary">Od 180 Kč</div>
                   </div>
                 </div>
@@ -58,17 +58,17 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
-                    <OptimizedImage 
-                      src="/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png"
-                      alt="Medovicový med z MVFarma - tmavý med z lesních medoviček"
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Medovicový med</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Tmavý med s bohatou chutí z lesních medoviček
-                    </p>
+                     <OptimizedImage 
+                       src="/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png"
+                       alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
+                       className="max-w-full max-h-full object-contain"
+                     />
+                   </div>
+                   <div className="p-6">
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>
+                     <p className="text-muted-foreground mb-4">
+                       Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější
+                     </p>
                     <div className="text-2xl font-bold text-primary">Od 220 Kč</div>
                   </div>
                 </div>
