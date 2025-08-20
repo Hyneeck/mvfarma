@@ -9,18 +9,18 @@ import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
 const HoneyPage = () => {
   const honeyTypes = [
     {
-      title: "Letní květový med",
-      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější.",
-      icon: TreePine,
-      price: "Od 220 Kč",
-      features: ["Dlouhá trvanlivost", "Ideální na zimu", "Bohatá chuť"]
+      title: "Jarní květový med",
+      description: "Světlý med z jarních květů z luk a zahrad - jemná sladká chuť",
+      icon: Flower2,
+      price: "200 Kč za sklenici 950g",
+      features: ["Jemná sladká chuť", "Světlá barva", "Rychlá krystalizace"]
     },
     {
-      title: "Jarní květový med",
-      description: "Světlý med z jarních květů s jemnou chutí a květinovou vůní. Perfektní pro každodenní užívání.",
-      icon: Flower2,
+      title: "Letní květový med",
+      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější",
+      icon: TreePine,
       price: "Od 180 Kč",
-      features: ["Jemná chuť", "Rychle krystalizuje", "Perfektní na palačinky"]
+      features: ["Pikantnější chuť", "Tmavší barva", "Dlouhá trvanlivost"]
     }
   ];
 
@@ -123,36 +123,6 @@ const HoneyPage = () => {
         </div>
       </section>
 
-      {/* Our Hives Section */}
-      <section className="py-[clamp(2rem,6vw,6rem)] bg-background">
-        <div className="container mx-auto px-5 max-w-[1200px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <ScrollAnimation animation="slide-in-left">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <OptimizedImage 
-                  src="/lovable-uploads/0b66bf50-89ff-4f01-bb65-989583bc0630.png"
-                  alt="Včelaři z MVFarma při práci s úly - péče o včelstva"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animation="slide-in-right">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                  Naše úly
-                </h2>
-                <p className="text-lg text-foreground mb-6 leading-relaxed">
-                  Naše včelstva jsou umístěna na pečlivě vybraných stanovištích v čisté přírodě Českomoravské vrchoviny. Každý úl je pravidelně kontrolován a udržován podle nejnovějších včelařských postupů.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed">
-                  Používáme ekologické materiály a šetrné metody, které respektují přirozený životní cyklus včel a zajišťují nejvyšší kvalitu medu.
-                </p>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </div>
-      </section>
 
       {/* Fascinating Life of Bees Section */}
       <section className="py-[clamp(2rem,6vw,6rem)] bg-accent">

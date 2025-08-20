@@ -9,13 +9,13 @@ const MVFarmaProduce = () => {
       title: "Letní květový med",
       description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější",
       icon: TreePine,
-      price: "200kč za 950g"
+      price: "Od 180 Kč"
     },
     {
       title: "Jarní květový med",
-      description: "Květový med z jarní zklizně zejména z ovocných stromů a prvních květů na loukách, má světlejší barvu a jemnější chuť než letní.",
+      description: "Světlý med z jarních květů z luk a zahrad - jemná sladká chuť",
       icon: Flower2,
-      price: "200 Kč za 950g"
+      price: "200 Kč za sklenici 950g"
     }
   ];
 
@@ -24,7 +24,7 @@ const MVFarmaProduce = () => {
       <div className="container mx-auto px-5 max-w-[1200px]">
         <ScrollAnimation animation="fade-in">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy 2015</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Objevte naši nabídku kvalitních medů z čisté přírody Českomoravské vrchoviny
             </p>

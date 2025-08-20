@@ -49,18 +49,11 @@ const AboutPage = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
                   Náš příběh
                 </h2>
-                <p className="text-lg text-foreground mb-6 leading-relaxed">
-                  Naše včelařská cesta začala před mnoha lety, kdy jsme se rozhodli navázat na rodinnou tradici včelaření. S každým rokem rosteme, učíme se od včel a zdokonalujeme naše postupy.
-                </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  Dnes se staráme o desítky včelstev v čistém prostředí Českomoravské vrchoviny, kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
+                  Naše včelařská cesta začala před mnoha lety, když jsme ještě jako děti pomáhali příbuzným na venkově s péčí o včely. Tehdy se ještě včelařilo tradičními metodami, přiměřenými době. Zde jsme získali zkušenosti, lásku ke včelám a cit k jejím ošetřováním. Později jsme se rozhodli navázat na rodinnou tradici včelaření.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 bg-card rounded-lg border border-border">
-                    <div className="text-2xl font-bold text-primary">50+</div>
-                    <div className="text-sm text-muted-foreground">Včelstev</div>
-                  </div>
+                <div className="grid grid-cols-1 gap-4">
                   <div className="text-center p-4 bg-card rounded-lg border border-border">
                     <div className="text-2xl font-bold text-primary">30+</div>
                     <div className="text-sm text-muted-foreground">Let zkušeností</div>
@@ -78,10 +71,10 @@ const AboutPage = () => {
                   Naše včelstva
                 </h2>
                 <p className="text-lg text-foreground mb-6 leading-relaxed">
-                  V současné době pečujeme o více než 50 včelstev, která jsou rozmístěna na několika stanovištích v čisté přírodě Českomoravské vrchoviny. Každé stanoviště je pečlivě vybráno s ohledem na dostupnost různorodé pastvy pro včely.
+                  Používáme moderní metody, které aplikujeme, s úctou k přírodě, s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
                 </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  Naše úly jsou vyrobeny z kvalitního smrkového dřeva a jsou pravidelně udržovány. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
+                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Naše včely léčíme organickými kyselinami které jsou přirozeně obsažené v medu.
                 </p>
               </div>
             </ScrollAnimation>
