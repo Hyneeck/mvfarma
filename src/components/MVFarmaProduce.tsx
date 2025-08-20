@@ -9,13 +9,13 @@ const MVFarmaProduce = () => {
       title: "Letní květový med",
       description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější",
       icon: TreePine,
-      price: "Od 220 Kč"
+      price: "200kč za 950g"
     },
     {
       title: "Jarní květový med",
-      description: "Světlý med z jarních květů",
+      description: "Květový med z jarní zklizně zejména z ovocných stromů a prvních květů na loukách, má světlejší barvu a jemnější chuť než letní.",
       icon: Flower2,
-      price: "Od 180 Kč"
+      price: "200 Kč za 950g"
     }
   ];
 
