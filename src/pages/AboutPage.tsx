@@ -74,7 +74,7 @@ const AboutPage = () => {
                   Používáme moderní metody, které aplikujeme, s úctou k přírodě, s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
                 </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Naše včely léčíme organickými kyselinami které jsou přirozeně obsažené v medu.
+                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Naše včely léčíme organickými kyselinami které jsou přirozeně obsažené v medu. Naše úly jsou vyrobeny z kvalitního smrkového dřeva a jsou pravidelně udržovány. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
                 </p>
               </div>
             </ScrollAnimation>
