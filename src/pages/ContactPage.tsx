@@ -68,7 +68,6 @@ const ContactPage = () => {
                       <h3 className="font-bold text-foreground mb-1">Adresa</h3>
                       <p className="text-muted-foreground">
                         MVFarma<br />
-                        Českomoravská vrchovina<br />
                         503 41 Nový Bydžov
                       </p>
                     </div>
@@ -170,12 +169,6 @@ const ContactPage = () => {
                   </button>
                 </form>
 
-                <div className="mt-8 p-6 bg-card rounded-lg border border-border">
-                  <h3 className="font-bold text-foreground mb-3">Návštěva farmy</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Chcete navštívit naši farmu? Domluvte si předem termín, rádi vám ukážeme naše včelstva a povíme více o našem včelařství.
-                  </p>
-                </div>
               </div>
             </ScrollAnimation>
           </div>

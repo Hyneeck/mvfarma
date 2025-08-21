@@ -56,7 +56,6 @@ const MVFarmaStory = () => {
             <div className="aspect-[4/3] bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
               <div className="text-center text-primary-foreground p-8">
                 <h3 className="text-2xl font-bold mb-4">Naše včelstva</h3>
-                <p className="text-lg opacity-90">Českomoravská vrchovina</p>
               </div>
             </div>
           </ScrollAnimation>

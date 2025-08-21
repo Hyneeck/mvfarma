@@ -51,8 +51,7 @@ const MVFarmaFooter = () => {
               <div className="flex items-start space-x-2">
                 <MapPin size={16} className="text-accent mt-0.5 flex-shrink-0" />
                 <span className="text-background/80 text-sm">
-                  Nový Bydžov<br />
-                  Českomoravská vrchovina
+                  Nový Bydžov
                 </span>
               </div>
               <div className="flex items-center space-x-2">

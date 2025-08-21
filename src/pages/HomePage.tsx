@@ -12,9 +12,9 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="MVFarma - Poctivý med z Českomoravské vrchoviny"
-        description="MVFarma nabízí kvalitní med z čisté přírody Českomoravské vrchoviny. Objevte naše medovicové a květové medy z 30 úlů v okolí Nového Bydžova."
-        keywords="med, včelařství, MVFarma, medovicový med, květový med, Českomoravská vrchovina, Nový Bydžov"
+        title="MVFarma - Poctivý med z Nového Bydžova"
+        description="MVFarma nabízí kvalitní med z čisté přírody. Objevte naše medovicové a květové medy z 30 úlů v okolí Nového Bydžova."
+        keywords="med, včelařství, MVFarma, medovicový med, květový med, Nový Bydžov"
         url="https://mvfarma.cz"
       />
       <MVFarmaHeader />
