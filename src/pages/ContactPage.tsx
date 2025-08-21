@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, HelpCircle } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
+import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -39,9 +40,21 @@ const ContactPage = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Kontaktujte nás
-            </h1>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold text-white">
+                Kontaktujte nás
+              </h1>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="text-white/70 hover:text-white transition-colors">
+                    <HelpCircle className="w-8 h-8" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-80">
+                  <p className="text-sm">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</p>
+                </PopoverContent>
+              </Popover>
+            </div>
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
               Rádi odpovíme na vaše dotazy a těšíme se na setkání s vámi
             </p>
