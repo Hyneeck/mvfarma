@@ -36,7 +36,7 @@ const BlogPage = () => {
               Sledujte náš každodenní život s včelami
             </p>
             <a 
-              href="https://instagram.com/mvfarma_" 
+              href="https://www.instagram.com/mvfarma_?igsh=M2h4anhpMzg2cTlm&utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
@@ -55,7 +55,7 @@ const BlogPage = () => {
             {instagramPosts.map((post, index) => (
               <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
                 <a 
-                  href="https://instagram.com/mvfarma_"
+                  href="https://www.instagram.com/mvfarma_?igsh=M2h4anhpMzg2cTlm&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group block bg-card rounded-lg border border-border overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
