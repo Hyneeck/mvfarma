@@ -33,7 +33,7 @@ const BlogPage = () => {
               Náš Instagram
             </h1>
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8">
-              Sledujte náš každodenní život s včelami
+              Sledujte náš blog na instagramu
             </p>
             <a 
               href="https://www.instagram.com/mvfarma_?igsh=M2h4anhpMzg2cTlm&utm_source=qr" 
@@ -42,7 +42,7 @@ const BlogPage = () => {
               className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
             >
               <Instagram className="w-6 h-6" />
-              Sledovat @mvfarma_
+              Náš blog
             </a>
           </ScrollAnimation>
         </div>
