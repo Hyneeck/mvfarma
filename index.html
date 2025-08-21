@@ -21,21 +21,37 @@
     <link rel="modulepreload" href="/src/main.tsx" />
     <link rel="preload" href="/src/index.css" as="style" />
     
-    <!-- Critical CSS for above-the-fold content -->
+    <!-- Expanded critical CSS for above-the-fold content -->
     <style>
-      :root{--background:47 92% 98%;--foreground:18 23% 31%;--primary:45 93% 47%;--primary-foreground:47 92% 98%;--secondary:50 56% 88%;--secondary-foreground:18 23% 31%;--border:50 56% 88%;--radius:0.5rem}*{border-color:hsl(var(--border))}body{background-color:hsl(var(--background));color:hsl(var(--foreground))}
-      .bg-background{background-color:hsl(var(--background))}.text-foreground{color:hsl(var(--foreground))}.bg-primary{background-color:hsl(var(--primary))}.text-primary-foreground{color:hsl(var(--primary-foreground))}.flex{display:flex}.items-center{align-items:center}.justify-center{justify-content:center}.min-h-screen{min-height:100vh}.animate-spin{animation:spin 1s linear infinite}.rounded-full{border-radius:9999px}.h-8{height:2rem}.w-8{width:2rem}.border-b-2{border-bottom-width:2px}.border-primary{border-color:hsl(var(--primary))}
+      :root{--background:47 92% 98%;--foreground:18 23% 31%;--card:47 92% 98%;--card-foreground:18 23% 31%;--primary:45 93% 47%;--primary-foreground:47 92% 98%;--secondary:50 56% 88%;--secondary-foreground:18 23% 31%;--muted:50 56% 88%;--muted-foreground:18 23% 31%;--accent:45 83% 91%;--accent-foreground:0 0% 0%;--border:50 56% 88%;--input:50 56% 88%;--ring:0 0% 0%;--radius:0.5rem}
+      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:hsl(var(--border))}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}
+      body{margin:0;line-height:inherit;background-color:hsl(var(--background));color:hsl(var(--foreground))}
+      .bg-background{background-color:hsl(var(--background))}.text-foreground{color:hsl(var(--foreground))}.bg-primary{background-color:hsl(var(--primary))}.text-primary-foreground{color:hsl(var(--primary-foreground))}.bg-card{background-color:hsl(var(--card))}.text-card-foreground{color:hsl(var(--card-foreground))}
+      .flex{display:flex}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.min-h-screen{min-height:100vh}.h-8{height:2rem}.w-8{width:2rem}.p-4{padding:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-center{text-align:center}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-medium{font-weight:500}.font-bold{font-weight:700}
+      .animate-spin{animation:spin 1s linear infinite}.rounded-full{border-radius:9999px}.rounded{border-radius:calc(var(--radius) - 2px)}.border-b-2{border-bottom-width:2px}.border-primary{border-color:hsl(var(--primary))}.shadow{box-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1)}
       @keyframes spin{to{transform:rotate(360deg)}}
+      .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}@media(min-width:640px){.container{max-width:640px}}@media(min-width:768px){.container{max-width:768px}}@media(min-width:1024px){.container{max-width:1024px}}@media(min-width:1280px){.container{max-width:1280px}}
     </style>
     
-    <!-- Optimized CSS loading to break dependency chains -->
-    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
-    
-    <!-- Async CSS loading script -->
+    <!-- Completely defer CSS loading after page render -->
     <script>
-      !function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
+      function loadCSS(href,before,media,attributes){var doc=arguments.callee.doc||document;var ss=doc.styleSheets;if(attributes){attributes.href=href;attributes.rel="stylesheet"}else{attributes={href:href,rel:"stylesheet"}}if(!media){media="all"}var link=doc.createElement("link");if(before){before.parentNode.insertBefore(link,before)}else{(doc.head||doc.getElementsByTagName("head")[0]).appendChild(link)}for(var key in attributes){link.setAttribute(key,attributes[key])}if(media){link.setAttribute("media",media)}return link}
+      
+      // Load CSS after initial render
+      window.addEventListener('DOMContentLoaded',function(){
+        loadCSS('/src/index.css');
+      });
+      
+      // Fallback for older browsers
+      if(!window.addEventListener){
+        window.attachEvent('onload',function(){
+          loadCSS('/src/index.css');
+        });
+      }
     </script>
+    
+    <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
