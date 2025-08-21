@@ -10,10 +10,16 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://mvfarma.cz" />
 
-    <!-- Preload critical resources -->
-    <link rel="preload" href="/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png" as="image" />
+    <!-- DNS prefetch and preconnect for faster connections -->
+    <link rel="dns-prefetch" href="//mvfarma.lovable.app" />
+    <link rel="preconnect" href="https://mvfarma.lovable.app" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical resources to break request chains -->
+    <link rel="preload" href="/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png" as="image" />
+    <link rel="modulepreload" href="/src/main.tsx" />
+    <link rel="preload" href="/src/index.css" as="style" />
     
     <!-- Critical CSS for above-the-fold content -->
     <style>
@@ -22,9 +28,8 @@
       @keyframes spin{to{transform:rotate(360deg)}}
     </style>
     
-    <!-- Non-render-blocking CSS loading -->
-    <link rel="modulepreload" href="/src/main.tsx" />
-    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="print" />
+    <!-- Optimized CSS loading to break dependency chains -->
+    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
     
     <!-- Async CSS loading script -->
