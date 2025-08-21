@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { generateKeywords } from '../utils/seoKeywords';
 
 interface SEOProps {
   title: string;
@@ -17,6 +18,8 @@ const SEO = ({
   url = 'https://mvfarma.cz',
   type = 'website'
 }: SEOProps) => {
+  // Generate enhanced keywords with base keywords if not provided
+  const enhancedKeywords = keywords ? keywords : generateKeywords();
   useEffect(() => {
     // Update document title
     document.title = title;
@@ -40,7 +43,7 @@ const SEO = ({
 
     // Basic meta tags
     updateMetaTag('description', description);
-    if (keywords) updateMetaTag('keywords', keywords);
+    updateMetaTag('keywords', enhancedKeywords);
     
     // Open Graph tags
     updateMetaTag('og:title', title, true);
@@ -63,7 +66,7 @@ const SEO = ({
       document.head.appendChild(canonical);
     }
     canonical.href = url;
-  }, [title, description, keywords, image, url, type]);
+  }, [title, description, enhancedKeywords, image, url, type]);
 
   return null;
 };
