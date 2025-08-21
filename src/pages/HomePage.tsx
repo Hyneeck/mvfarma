@@ -37,7 +37,7 @@ const HomePage = () => {
                      <OptimizedImage 
                        src="/lovable-uploads/b0e318e6-c806-4965-88ef-b80aad6d16b2.png"
                        alt="Medik 1 z MVFarma - světlý med z jarních květů"
-                       className="max-w-full max-h-full object-contain"
+                        className="max-w-full max-h-full object-cover"
                      />
                    </div>
                    <div className="p-6">
@@ -58,7 +58,7 @@ const HomePage = () => {
                      <OptimizedImage 
                        src="/lovable-uploads/2d09cb5e-dcd7-41a1-9b8a-09d01df02d1d.png"
                        alt="Medik 2 z MVFarma - tmavší med z letní sklizně"
-                       className="max-w-full max-h-full object-contain"
+                       className="max-w-full max-h-full object-cover"
                      />
                    </div>
                    <div className="p-6">
