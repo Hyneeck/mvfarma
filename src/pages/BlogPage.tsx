@@ -1,8 +1,8 @@
 
-import { MVFarmaHeader } from "@/components/MVFarmaHeader";
-import { MVFarmaBlog } from "@/components/MVFarmaBlog";
-import { MVFarmaFooter } from "@/components/MVFarmaFooter";
-import { SEO } from "@/components/SEO";
+import MVFarmaHeader from "@/components/MVFarmaHeader";
+import MVFarmaBlog from "@/components/MVFarmaBlog";
+import MVFarmaFooter from "@/components/MVFarmaFooter";
+import SEO from "@/components/SEO";
 
 const BlogPage = () => {
   return (

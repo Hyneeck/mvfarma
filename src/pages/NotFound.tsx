@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
-import { MVFarmaFooter } from "@/components/MVFarmaFooter";
-import { SEO } from "@/components/SEO";
+import MVFarmaFooter from "@/components/MVFarmaFooter";
+import SEO from "@/components/SEO";
 
 const NotFound = () => {
   return (

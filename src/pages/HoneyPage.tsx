@@ -1,8 +1,8 @@
 
-import { MVFarmaHeader } from "@/components/MVFarmaHeader";
-import { MVFarmaProduce } from "@/components/MVFarmaProduce";
-import { MVFarmaFooter } from "@/components/MVFarmaFooter";
-import { SEO } from "@/components/SEO";
+import MVFarmaHeader from "@/components/MVFarmaHeader";
+import MVFarmaProduce from "@/components/MVFarmaProduce";
+import MVFarmaFooter from "@/components/MVFarmaFooter";
+import SEO from "@/components/SEO";
 
 const HoneyPage = () => {
   return (

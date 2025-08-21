@@ -1,8 +1,8 @@
 
-import { MVFarmaHeader } from "@/components/MVFarmaHeader";
-import { MVFarmaStory } from "@/components/MVFarmaStory";
-import { MVFarmaFooter } from "@/components/MVFarmaFooter";
-import { SEO } from "@/components/SEO";
+import MVFarmaHeader from "@/components/MVFarmaHeader";
+import MVFarmaStory from "@/components/MVFarmaStory";
+import MVFarmaFooter from "@/components/MVFarmaFooter";
+import SEO from "@/components/SEO";
 
 const AboutPage = () => {
   return (
