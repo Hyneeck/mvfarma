@@ -35,7 +35,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
-                       src="/lovable-uploads/c54b390c-8818-4cd7-ad01-5f0557f4ad6d.png"
+                       src="/lovable-uploads/be0b432f-05c0-4dfe-992b-553e9168d15c.png"
                        alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                        className="max-w-full max-h-full object-contain"
                      />
@@ -56,7 +56,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
-                       src="/lovable-uploads/74d743a5-47df-400d-8c32-f847267ddfac.png"
+                       src="/lovable-uploads/f163cc3d-d72e-4c0b-9314-3eb754531fae.png"
                        alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
                        className="max-w-full max-h-full object-contain"
                      />
