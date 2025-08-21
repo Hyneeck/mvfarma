@@ -36,12 +36,12 @@ const HomePage = () => {
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
                        src="/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png"
-                       alt="Medik 1 z MVFarma - světlý med z jarních květů"
+                       alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                         className="max-w-full max-h-full object-cover"
                      />
                    </div>
                    <div className="p-6">
-                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Medik 1</h3>
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
                      <p className="text-muted-foreground mb-4">
                        Světlý med z jarních květů z luk a zahrad
                      </p>
@@ -57,12 +57,12 @@ const HomePage = () => {
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
                        src="/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"
-                       alt="Medik 2 z MVFarma - tmavší med z letní sklizně"
+                       alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
                        className="max-w-full max-h-full object-cover"
                      />
                    </div>
                    <div className="p-6">
-                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Medik 2</h3>
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>
                      <p className="text-muted-foreground mb-4">
                        Květový med z letní sklizně zejména z luk a lesů
                      </p>

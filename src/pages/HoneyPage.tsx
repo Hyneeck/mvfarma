@@ -9,14 +9,14 @@ import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
 const HoneyPage = () => {
   const honeyTypes = [
     {
-      title: "Medik 1",
+      title: "Jarní květový med",
       description: "Květový med z jarních květů z luk a zahrad, má světlou barvu a jemnější chuť než letní.",
       icon: Flower2,
       price: "200 Kč/950g",
       features: ["Jemná sladká chuť", "Světlá barva", "Rychlá krystalizace"]
     },
     {
-      title: "Medik 2",
+      title: "Letní květový med",
       description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. Obsahuje podíl medovice",
       icon: TreePine,
       price: "200 Kč/950g",
@@ -60,7 +60,7 @@ const HoneyPage = () => {
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                        <OptimizedImage 
                          src={index === 0 ? "/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
-                         alt={index === 0 ? "Medik 1 z MVFarma - světlý med z jarních květů" : "Medik 2 z MVFarma - tmavší med z letní sklizně"}
+                         alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
                          className="max-w-full max-h-full object-cover"
                        />
                     </div>
