@@ -15,10 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Preload critical JS and CSS for faster loading -->
+    <!-- Non-render-blocking CSS loading -->
     <link rel="modulepreload" href="/src/main.tsx" />
-    <link rel="preload" href="/src/index.css" as="style" />
-    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
