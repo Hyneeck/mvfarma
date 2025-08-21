@@ -16,7 +16,7 @@ const MVFarmaFooter = () => {
               <span className="text-xl font-bold text-background">MVFarma</span>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Rodinné včelařství z Českomoravské vrchoviny. Kvalitní med s láskou k přírodě a včelám.
+              Rodinné včelařství z Nového Bydžova. Kvalitní med s láskou k přírodě a včelám.
             </p>
           </div>
 
