@@ -8,9 +8,9 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="O naší farmě - MVFarma | Včelařství v Českomoravské vrchovině"
+        title="O naší farmě - MVFarma | Rodinné včelí farma"
         description="Seznamte se s MVFarma - rodinným včelařstvím z Nového Bydžova. Naše příběh, tradice a vášeň pro včelařství a výrobu kvalitního medu."
-        keywords="MVFarma, včelařství, rodinná farma, Nový Bydžov, Českomoravská vrchovina, tradice, včelaři"
+        keywords="MVFarma, včelařství, rodinná farma, Nový Bydžov, tradice, včelaři"
         url="https://mvfarma.cz/o-nas"
       />
       <MVFarmaHeader />
@@ -74,7 +74,7 @@ const AboutPage = () => {
                   Používáme moderní metody, které aplikujeme, s úctou k přírodě, s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
                 </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Naše včely léčíme organickými kyselinami které jsou přirozeně obsažené v medu. Naše úly jsou vyrobeny z kvalitního smrkového dřeva a jsou pravidelně udržovány. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
+                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
                 </p>
               </div>
             </ScrollAnimation>
