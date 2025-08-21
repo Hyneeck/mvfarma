@@ -4,7 +4,8 @@ import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
 import OptimizedImage from '../components/OptimizedImage';
-import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
+import { Flower2, TreePine, Heart, Leaf, Award, HelpCircle } from 'lucide-react';
+import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
 
 const HoneyPage = () => {
   const honeyTypes = [
@@ -72,8 +73,7 @@ const HoneyPage = () => {
                     <p className="text-lg text-foreground mb-6 leading-relaxed">
                       {honey.description}
                     </p>
-                    <div className="text-2xl font-bold text-primary mb-6">{honey.price}</div>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-6">
                       {honey.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-foreground">
                           <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
@@ -81,6 +81,19 @@ const HoneyPage = () => {
                         </li>
                       ))}
                     </ul>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="text-2xl font-bold text-primary">{honey.price}</div>
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <button className="text-muted-foreground hover:text-primary transition-colors">
+                            <HelpCircle className="w-5 h-5" />
+                          </button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-64">
+                          <p className="text-sm">Objednávky přijímáme přes email.</p>
+                        </PopoverContent>
+                      </Popover>
+                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -129,9 +142,21 @@ const HoneyPage = () => {
         <div className="container mx-auto px-5 max-w-[1200px]">
           <ScrollAnimation animation="fade-in">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
-                Fascinující život včel
-              </h2>
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-primary">
+                  Fascinující život včel
+                </h2>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <button className="text-muted-foreground hover:text-primary transition-colors">
+                      <HelpCircle className="w-6 h-6" />
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-80">
+                    <p className="text-sm">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</p>
+                  </PopoverContent>
+                </Popover>
+              </div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Včely jsou úžasní tvorové s komplexní společenskou strukturou. Jeden úl může obsahovat až 80 000 včel pracujících jako jeden organismus.
               </p>
