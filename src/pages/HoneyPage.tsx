@@ -10,14 +10,14 @@ const HoneyPage = () => {
   const honeyTypes = [
     {
       title: "Jarní květový med",
-      description: "Světlý med z jarních květů z luk a zahrad - jemná sladká chuť",
+      description: "Květový med z jarních květů z luk a zahrad, má světlou barvu a jemnější chuť než letní.",
       icon: Flower2,
-      price: "200 Kč za sklenici 950g",
+      price: "200 Kč/950g",
       features: ["Jemná sladká chuť", "Světlá barva", "Rychlá krystalizace"]
     },
     {
       title: "Letní květový med",
-      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější",
+      description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. Obsahuje podíl medovice",
       icon: TreePine,
       price: "Od 180 Kč",
       features: ["Pikantnější chuť", "Tmavší barva", "Dlouhá trvanlivost"]

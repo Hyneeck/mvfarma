@@ -25,10 +25,7 @@ const HomePage = () => {
         <div className="container mx-auto px-5 max-w-[1200px]">
           <ScrollAnimation animation="fade-in">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy 2015</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Objevte chuť čisté přírody v našich medech z Českomoravské vrchoviny
-              </p>
+              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2>
             </div>
           </ScrollAnimation>
 
@@ -46,9 +43,9 @@ const HomePage = () => {
                    <div className="p-6">
                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
                      <p className="text-muted-foreground mb-4">
-                       Světlý med z jarních květů z luk a zahrad - jemná sladká chuť
+                       Světlý med z jarních květů z luk a zahrad
                      </p>
-                    <div className="text-2xl font-bold text-primary">200 Kč za sklenici 950g</div>
+                    <div className="text-2xl font-bold text-primary">200 Kč/950g</div>
                   </div>
                 </div>
               </Link>
@@ -67,9 +64,9 @@ const HomePage = () => {
                    <div className="p-6">
                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>
                      <p className="text-muted-foreground mb-4">
-                       Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější
+                       Květový med z letní sklizně zejména z luk a lesů
                      </p>
-                    <div className="text-2xl font-bold text-primary">Od 220 Kč</div>
+                    <div className="text-2xl font-bold text-primary">200 Kč/950g</div>
                   </div>
                 </div>
               </Link>
