@@ -40,21 +40,9 @@ const ContactPage = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <h1 className="text-4xl md:text-6xl font-bold text-white">
-                Kontaktujte nás
-              </h1>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <button className="text-white/70 hover:text-white transition-colors">
-                    <HelpCircle className="w-8 h-8" />
-                  </button>
-                </PopoverTrigger>
-                <PopoverContent className="w-80">
-                  <p className="text-sm">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</p>
-                </PopoverContent>
-              </Popover>
-            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Kontaktujte nás
+            </h1>
             <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
               Rádi odpovíme na vaše dotazy a těšíme se na setkání s vámi
             </p>
@@ -112,6 +100,21 @@ const ContactPage = () => {
                         Ne: Zavřeno
                       </p>
                     </div>
+                  </div>
+                  
+                  {/* Question mark popup */}
+                  <div className="flex items-center gap-2 mt-6">
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <button className="text-muted-foreground hover:text-primary transition-colors">
+                          <HelpCircle className="w-5 h-5" />
+                        </button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-80">
+                        <p className="text-sm">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</p>
+                      </PopoverContent>
+                    </Popover>
+                    <span className="text-sm text-muted-foreground">Máte dotazy?</span>
                   </div>
                 </div>
 
