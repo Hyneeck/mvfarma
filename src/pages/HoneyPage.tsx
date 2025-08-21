@@ -19,7 +19,7 @@ const HoneyPage = () => {
       title: "Letní květový med",
       description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. Obsahuje podíl medovice",
       icon: TreePine,
-      price: "Od 180 Kč",
+      price: "200 Kč/950g",
       features: ["Pikantnější chuť", "Tmavší barva", "Dlouhá trvanlivost"]
     }
   ];
@@ -27,7 +27,7 @@ const HoneyPage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Medy a včely - MVFarma | Kvalitní med z Českomoravské vrchoviny"
+        title="Medy a včely - MVFarma | Kvalitní med z tradiční včelařské farmy"
         description="Objevte svět našich včel a kvalitních medů z čisté přírody. Medovicový a květový med z 30 úlů rozmístěných v okolí Nového Bydžova."
         keywords="medovicový med, květový med, včelařství, MVFarma, med z lesa, med z luk, Český med"
         url="https://mvfarma.cz/medy-a-vcely"
