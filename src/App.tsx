@@ -8,7 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import HoneyPage from "./pages/HoneyPage";
 import GalleryPage from "./pages/GalleryPage";
 import BlogPage from "./pages/BlogPage";
-import BlogPostPage from "./pages/BlogPostPage";
+
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/medy-a-vcely" element={<HoneyPage />} />
           <Route path="/fotogalerie" element={<GalleryPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
