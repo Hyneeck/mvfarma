@@ -15,9 +15,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      :root{--background:47 92% 98%;--foreground:18 23% 31%;--primary:45 93% 47%;--primary-foreground:47 92% 98%;--secondary:50 56% 88%;--secondary-foreground:18 23% 31%;--border:50 56% 88%;--radius:0.5rem}*{border-color:hsl(var(--border))}body{background-color:hsl(var(--background));color:hsl(var(--foreground))}
+      .bg-background{background-color:hsl(var(--background))}.text-foreground{color:hsl(var(--foreground))}.bg-primary{background-color:hsl(var(--primary))}.text-primary-foreground{color:hsl(var(--primary-foreground))}.flex{display:flex}.items-center{align-items:center}.justify-center{justify-content:center}.min-h-screen{min-height:100vh}.animate-spin{animation:spin 1s linear infinite}.rounded-full{border-radius:9999px}.h-8{height:2rem}.w-8{width:2rem}.border-b-2{border-bottom-width:2px}.border-primary{border-color:hsl(var(--primary))}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+    
     <!-- Non-render-blocking CSS loading -->
     <link rel="modulepreload" href="/src/main.tsx" />
-    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="print" />
     <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
     
     <!-- Async CSS loading script -->
