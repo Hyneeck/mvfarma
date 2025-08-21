@@ -69,7 +69,7 @@ const ContactPage = () => {
                       <h3 className="font-bold text-foreground mb-1">Adresa</h3>
                       <p className="text-muted-foreground">
                         MVFarma<br />
-                        503 41 Nový Bydžov
+                      
                       </p>
                     </div>
                   </div>
