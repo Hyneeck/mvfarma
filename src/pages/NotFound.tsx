@@ -1,26 +1,34 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import { Link } from "react-router-dom";
+import { MVFarmaFooter } from "@/components/MVFarmaFooter";
+import { SEO } from "@/components/SEO";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <>
+      <SEO 
+        title="Stránka nenalezena - MV Farma"
+        description="Požadovaná stránka nebyla nalezena na webu MV Farma."
+      />
+      <div className="min-h-screen flex flex-col">
+        <div className="flex-1 flex items-center justify-center bg-gradient-to-b from-yellow-50 to-amber-50">
+          <div className="text-center px-4">
+            <h1 className="text-6xl font-bold text-amber-600 mb-4">404</h1>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Stránka nenalezena</h2>
+            <p className="text-gray-600 mb-8 max-w-md">
+              Omlouváme se, ale stránka kterou hledáte neexistuje nebo byla přesunuta.
+            </p>
+            <Link 
+              to="/" 
+              className="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-colors"
+            >
+              Zpět na hlavní stránku
+            </Link>
+          </div>
+        </div>
+        <MVFarmaFooter />
       </div>
-    </div>
+    </>
   );
 };
 
