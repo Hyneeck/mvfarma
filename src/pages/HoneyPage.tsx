@@ -59,7 +59,7 @@ const HoneyPage = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                        <OptimizedImage 
-                         src={index === 0 ? "/lovable-uploads/a0dbaa6b-f22f-41cf-ba29-d37b7893c582.png" : "/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"}
+                         src={index === 0 ? "/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
                          alt={index === 0 ? "Medik 1 z MVFarma - světlý med z jarních květů" : "Medik 2 z MVFarma - tmavší med z letní sklizně"}
                          className="max-w-full max-h-full object-cover"
                        />
