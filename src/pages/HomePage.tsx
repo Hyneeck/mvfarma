@@ -35,7 +35,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
-                       src="/lovable-uploads/b0e318e6-c806-4965-88ef-b80aad6d16b2.png"
+                       src="/lovable-uploads/a0dbaa6b-f22f-41cf-ba29-d37b7893c582.png"
                        alt="Medik 1 z MVFarma - světlý med z jarních květů"
                         className="max-w-full max-h-full object-cover"
                      />
@@ -56,7 +56,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <OptimizedImage 
-                       src="/lovable-uploads/2d09cb5e-dcd7-41a1-9b8a-09d01df02d1d.png"
+                       src="/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"
                        alt="Medik 2 z MVFarma - tmavší med z letní sklizně"
                        className="max-w-full max-h-full object-cover"
                      />
