@@ -1,8 +1,8 @@
 
-import MVFarmaHeader from "@/components/MVFarmaHeader";
-import MVFarmaGallery from "@/components/MVFarmaGallery";
-import MVFarmaFooter from "@/components/MVFarmaFooter";
-import SEO from "@/components/SEO";
+import { MVFarmaHeader } from "@/components/MVFarmaHeader";
+import { MVFarmaGallery } from "@/components/MVFarmaGallery";
+import { MVFarmaFooter } from "@/components/MVFarmaFooter";
+import { SEO } from "@/components/SEO";
 
 const GalleryPage = () => {
   return (
