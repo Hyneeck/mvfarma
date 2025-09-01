@@ -6,8 +6,8 @@ import CriticalCSS from "./components/CriticalCSS";
 import MobileOptimized from "./components/MobileOptimized";
 
 // Performance: Lazy load heavy/non-critical components to reduce initial bundle
-const Toaster = lazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
-const Sonner = lazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
+const ToasterComponent = lazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
+const SonnerComponent = lazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 // Lazy load all page components for code splitting
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -38,8 +38,8 @@ const App = () => (
           </Routes>
         </Suspense>
         <Suspense fallback={null}>
-          <Toaster />
-          <Sonner />
+          <ToasterComponent />
+          <SonnerComponent />
         </Suspense>
       </BrowserRouter>
     </TooltipProvider>
