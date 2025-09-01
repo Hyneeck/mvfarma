@@ -29,8 +29,16 @@ const HomePage = () => {
           email: "info@mvfarma.cz",
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Nový Bydžov",
             addressLocality: "Nový Bydžov",
+            addressRegion: "Hradec Králové",
+            postalCode: "504 01",
             addressCountry: "CZ"
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 50.2406,
+            longitude: 15.4853
           },
           openingHours: "Mo-Fr 08:00-17:00",
           priceRange: "200-300 CZK",
