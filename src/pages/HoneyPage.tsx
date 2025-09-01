@@ -3,7 +3,8 @@ import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
-import OptimizedImage from '../components/OptimizedImage';
+import StructuredData from '../components/StructuredData';
+import LazyImage from '../components/LazyImage';
 import { Flower2, TreePine, Heart, Leaf, Award, HelpCircle } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
 
@@ -28,10 +29,32 @@ const HoneyPage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Medy a včely - MVFarma | Kvalitní med z tradiční včelařské farmy"
-        description="Objevte svět našich včel a kvalitních medů z čisté přírody. Medovicový a květový med z 30 úlů rozmístěných v okolí Nového Bydžova."
-        keywords="medovicový med, květový med, včelařství, MVFarma, med z lesa, med z luk, Český med"
+        title="Medy a včely - MVFarma | Květový a medovicový med z tradičního včelařství"
+        description="Objevte kvalitní med z MVFarma - jarní a letní květový med z 30 úlů v Českomoravské vrchovině. Tradiční výroba, šetrné stáčení."
+        keywords="jarní květový med, letní květový med, medovicový med, včelařství, MVFarma, med z lesa, med z luk, český med, tradiční výroba"
         url="https://mvfarma.cz/medy-a-vcely"
+        type="product"
+      />
+      <StructuredData 
+        type="Product" 
+        data={{
+          name: "Květový med MVFarma",
+          description: "Kvalitní květový med z tradičního včelařství",
+          brand: {
+            "@type": "Brand",
+            name: "MVFarma"
+          },
+          offers: [
+            {
+              "@type": "Offer",
+              price: "200",
+              priceCurrency: "CZK",
+              availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition"
+            }
+          ],
+          image: "https://mvfarma.cz/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png"
+        }}
       />
       <MVFarmaHeader />
       
@@ -59,7 +82,7 @@ const HoneyPage = () => {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                       <OptimizedImage 
+                       <LazyImage 
                          src={index === 0 ? "/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
                          alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
                          className="max-w-full max-h-full object-cover"

@@ -5,17 +5,41 @@ import MVFarmaHero from '../components/MVFarmaHero';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
-import OptimizedImage from '../components/OptimizedImage';
+import StructuredData from '../components/StructuredData';
+import LazyImage from '../components/LazyImage';
 import { Flower2, TreePine } from 'lucide-react';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="MVFarma - Poctivý med z Nového Bydžova"
-        description="MVFarma nabízí kvalitní med z čisté přírody. Objevte naše medovicové a květové medy z 30 úlů v okolí Nového Bydžova."
-        keywords="med, včelařství, MVFarma, medovicový med, květový med, Nový Bydžov"
+        title="MVFarma - Kvalitní med z tradičního včelařství | Nový Bydžov"
+        description="MVFarma nabízí kvalitní med z čisté přírody Českomoravské vrchoviny. Květové a medovicové medy z 30 úlů. Rodinná tradice od roku 1956."
+        keywords="med, včelařství, MVFarma, medovicový med, květový med, Nový Bydžov, rodinná tradice, český med"
         url="https://mvfarma.cz"
+        type="website"
+      />
+      <StructuredData 
+        type="LocalBusiness"
+        data={{
+          name: "MVFarma",
+          description: "Rodinné včelařství s tradicí od roku 1956",
+          url: "https://mvfarma.cz",
+          telephone: "+420 123 456 789",
+          email: "info@mvfarma.cz",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Nový Bydžov",
+            addressCountry: "CZ"
+          },
+          openingHours: "Mo-Fr 08:00-17:00",
+          priceRange: "200-300 CZK",
+          image: "https://mvfarma.cz/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png",
+          sameAs: [
+            "https://www.facebook.com/mvfarma",
+            "https://www.instagram.com/mvfarma"
+          ]
+        }}
       />
       <MVFarmaHeader />
       <MVFarmaHero />
@@ -34,10 +58,11 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
-                     <OptimizedImage 
+                     <LazyImage 
                        src="/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png"
                        alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                         className="max-w-full max-h-full object-cover"
+                        priority={true}
                      />
                    </div>
                    <div className="p-6">
@@ -55,7 +80,7 @@ const HomePage = () => {
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
-                     <OptimizedImage 
+                     <LazyImage 
                        src="/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"
                        alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
                        className="max-w-full max-h-full object-cover"

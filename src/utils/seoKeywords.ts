@@ -18,7 +18,15 @@ export const baseKeywords = [
   'nektar',
   'poctivý med',
   'tradiční výroba',
-  'rodinný podnik'
+  'rodinný podnik',
+  'kvalitní med',
+  'přírodní med',
+  'lokální produkce',
+  'včelí produkty',
+  'med ze střechy střední Evropy',
+  'nektar ze stromů',
+  'med z akátu',
+  'včelařské tradice'
 ];
 
 export const generateKeywords = (pageSpecificKeywords: string[] = []): string => {
