@@ -53,13 +53,13 @@ const HoneyPage = () => {
               itemCondition: "https://schema.org/NewCondition"
             }
           ],
-          image: "https://mvfarma.cz/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png"
+          image: "https://mvfarma.cz/lovable-uploads/honey-jar-optimized.webp"
         }}
       />
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png')"}}>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/hero-background.webp')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
@@ -83,7 +83,7 @@ const HoneyPage = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                        <LazyImage 
-                         src={index === 0 ? "/lovable-uploads/584f464d-d7ea-4d3b-96c1-34b7d79058d8.png" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
+                         src={index === 0 ? "/lovable-uploads/honey-jar-optimized.webp" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
                          alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
                          className="max-w-full max-h-full object-cover"
                        />

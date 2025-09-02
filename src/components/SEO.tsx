@@ -17,7 +17,7 @@ const SEO = ({
   title, 
   description, 
   keywords,
-  image = '/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png',
+  image = '/lovable-uploads/hero-background.webp',
   url = 'https://mvfarma.cz',
   type = 'website',
   author = 'MVFarma',
