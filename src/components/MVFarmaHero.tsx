@@ -4,16 +4,16 @@ import ScrollAnimation from './ScrollAnimation';
 
 const MVFarmaHero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat saturate-150" style={{backgroundImage: "url('/lovable-uploads/1839b982-5e8a-4e50-a8e5-65b9733411f4.png')"}}>
-      <div className="absolute inset-0 bg-black/60"></div>
+    <section id="home" className="hero-section">
+      <div className="hero-overlay"></div>
       
-      <div className="container mx-auto px-5 relative z-10 text-center">
+      <div className="hero-content">
         <ScrollAnimation animation="fade-in">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-amber-100 mb-6">
+            <h1 className="hero-title">
               Vítejte na MVFarma
             </h1>
-            <p className="text-xl md:text-2xl text-amber-100 mb-8 leading-relaxed">
+            <p className="hero-subtitle">
               Poctivý med tradiční včelařské farmy, s úctou k přírodě a včelám
             </p>
           </div>

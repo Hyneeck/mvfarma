@@ -33,7 +33,7 @@ const MVFarmaHeader = () => {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <header className={`header-fixed ${
       isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-5 max-w-[1200px]">
