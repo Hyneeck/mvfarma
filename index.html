@@ -59,7 +59,8 @@
     </style>
     
     <!-- Load CSS asynchronously to prevent render blocking -->
-    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
