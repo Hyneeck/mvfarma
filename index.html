@@ -21,6 +21,14 @@
     <link rel="modulepreload" href="/src/main.tsx" />
     <link rel="preload" href="/src/index.css" as="style" />
     
+    <!-- Preload critical JS chunks to reduce dependency chains -->
+    <link rel="modulepreload" href="/src/pages/HomePage.tsx" />
+    <link rel="modulepreload" href="/src/components/MVFarmaHeader.tsx" />
+    <link rel="modulepreload" href="/src/components/MVFarmaHero.tsx" />
+    <link rel="modulepreload" href="/src/components/MVFarmaFooter.tsx" />
+    <link rel="modulepreload" href="/src/components/SEO.tsx" />
+    <link rel="modulepreload" href="/src/components/LazyImage.tsx" />
+    
     <!-- Critical LCP optimizations -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" /></noscript>
@@ -48,22 +56,8 @@
       .header-fixed{position:fixed;top:0;width:100%;z-index:50;transition:all 0.3s ease}
     </style>
     
-    <!-- Completely defer CSS loading after page render -->
-    <script>
-      function loadCSS(href,before,media,attributes){var doc=arguments.callee.doc||document;var ss=doc.styleSheets;if(attributes){attributes.href=href;attributes.rel="stylesheet"}else{attributes={href:href,rel:"stylesheet"}}if(!media){media="all"}var link=doc.createElement("link");if(before){before.parentNode.insertBefore(link,before)}else{(doc.head||doc.getElementsByTagName("head")[0]).appendChild(link)}for(var key in attributes){link.setAttribute(key,attributes[key])}if(media){link.setAttribute("media",media)}return link}
-      
-      // Load CSS after initial render
-      window.addEventListener('DOMContentLoaded',function(){
-        loadCSS('/src/index.css');
-      });
-      
-      // Fallback for older browsers
-      if(!window.addEventListener){
-        window.attachEvent('onload',function(){
-          loadCSS('/src/index.css');
-        });
-      }
-    </script>
+    <!-- Load critical CSS immediately instead of deferring -->
+    <link rel="stylesheet" href="/src/index.css" />
     
     <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
 
