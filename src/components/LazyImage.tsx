@@ -8,6 +8,8 @@ interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   priority?: boolean;
   placeholder?: string;
   rootMargin?: string;
+  srcSet?: string;
+  sizes?: string;
 }
 
 const LazyImage: React.FC<LazyImageProps> = ({
@@ -17,6 +19,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
   priority = false,
   placeholder = 'blur',
   rootMargin = '10px',
+  srcSet,
+  sizes,
   ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -74,6 +78,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
         <img
           src={src}
           alt={alt}
+          srcSet={srcSet}
+          sizes={sizes}
           onLoad={handleLoad}
           onError={handleError}
           loading={priority ? "eager" : "lazy"}
