@@ -1,34 +1,21 @@
-import React, { useState } from 'react';
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 interface ContactFormProps {
-  onSubmit: (formData: FormData) => void;
+  onSubmit?: (formData: { name: string; email: string; message: string }) => void;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onSubmit(formData);
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const [state, handleSubmit] = useForm("mgvllnll");
+  
+  if (state.succeeded) {
+    return (
+      <div className="text-center py-8">
+        <p className="text-lg text-primary font-medium">Děkujeme za vaši zprávu!</p>
+        <p className="text-muted-foreground mt-2">Odpovíme vám co nejdříve.</p>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -42,15 +29,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             Jméno *
           </label>
           <input
-            type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            type="text"
             required
             className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-background text-foreground"
             placeholder="Vaše jméno"
           />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
 
         <div>
@@ -58,15 +44,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             E-mail *
           </label>
           <input
-            type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            type="email"
             required
             className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-background text-foreground"
             placeholder="vas@email.cz"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div>
@@ -76,20 +61,20 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             required
             rows={6}
             className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors bg-background text-foreground resize-vertical"
-            placeholder="Vaša zpráva..."
+            placeholder="Vaše zpráva..."
           />
+          <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
 
         <button
           type="submit"
-          className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg"
+          disabled={state.submitting}
+          className="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          Odeslat zprávu
+          {state.submitting ? "Odesílám..." : "Odeslat zprávu"}
         </button>
       </form>
     </div>
