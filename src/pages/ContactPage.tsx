@@ -74,7 +74,7 @@ const ContactPage = () => {
                       <Phone className="text-primary w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                       <div>
                         <h3 className="font-bold text-foreground mb-1">Telefon</h3>
-                        <p className="text-muted-foreground">+420 777 123 456</p>
+                        <p className="text-muted-foreground">+420 730 540 072</p>
                       </div>
                     </div>
 

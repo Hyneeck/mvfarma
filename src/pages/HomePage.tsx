@@ -25,7 +25,7 @@ const HomePage = () => {
           name: "MVFarma",
           description: "Rodinné včelařství s tradicí od roku 1956",
           url: "https://mvfarma.cz",
-          telephone: "+420 123 456 789",
+          telephone: "+420 730 540 072",
           email: "info@mvfarma.cz",
           address: {
             "@type": "PostalAddress",

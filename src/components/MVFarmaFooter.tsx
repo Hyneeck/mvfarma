@@ -56,7 +56,7 @@ const MVFarmaFooter = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={16} className="text-accent flex-shrink-0" />
-                <span className="text-background/80 text-sm">+420 777 123 456</span>
+                <span className="text-background/80 text-sm">+420 730 540 072</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} className="text-accent flex-shrink-0" />
