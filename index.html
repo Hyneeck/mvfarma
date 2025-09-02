@@ -58,8 +58,9 @@
       .header-fixed{position:fixed;top:0;width:100%;z-index:50;transition:all 0.3s ease}
     </style>
     
-    <!-- Load CSS asynchronously to prevent render blocking -->
+    <!-- Load CSS asynchronously with media query technique -->
     <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="/src/index.css" /></noscript>
 
     <!-- Open Graph / Facebook -->
