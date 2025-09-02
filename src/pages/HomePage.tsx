@@ -13,9 +13,9 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="MVFarma - Kvalitní med z tradičního včelařství | Nový Bydžov"
-        description="MVFarma nabízí kvalitní med z čisté přírody Českomoravské vrchoviny. Květové a medovicové medy z 30 úlů. Rodinná tradice od roku 1956."
-        keywords="med, včelařství, MVFarma, medovicový med, květový med, Nový Bydžov, rodinná tradice, český med"
+        title="MVFarma - Kvalitní med z tradičního včelařství | Praha"
+        description="MVFarma nabízí kvalitní med z čisté přírody Českomoravské vrchoviny pro Prahu a okolí. Květové a medovicové medy z 30 úlů. Rodinná tradice od roku 1956."
+        keywords="med, včelařství, MVFarma, medovicový med, květový med, Praha, rodinná tradice, český med, med Praha"
         url="https://mvfarma.cz"
         type="website"
       />

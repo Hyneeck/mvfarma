@@ -59,10 +59,10 @@ const SEO = ({
     
     // Czech localization meta tags
     updateMetaTag('language', 'cs');
-    updateMetaTag('geo.region', 'CZ-20'); // Hradec Králové Region
-    updateMetaTag('geo.placename', 'Nový Bydžov');
-    updateMetaTag('geo.position', '50.2406;15.4853'); // Nový Bydžov coordinates
-    updateMetaTag('ICBM', '50.2406, 15.4853');
+    updateMetaTag('geo.region', 'CZ-10'); // Prague Region
+    updateMetaTag('geo.placename', 'Prague');
+    updateMetaTag('geo.position', '50.0755;14.4378'); // Prague coordinates
+    updateMetaTag('ICBM', '50.0755, 14.4378');
     updateMetaTag('distribution', 'global');
     updateMetaTag('rating', 'general');
     updateMetaTag('revisit-after', '7 days');
@@ -77,15 +77,15 @@ const SEO = ({
     updateMetaTag('og:locale', 'cs_CZ', true);
     updateMetaTag('og:locale:alternate', 'cs', true);
     updateMetaTag('og:country-name', 'Czech Republic', true);
-    updateMetaTag('og:region', 'Hradec Králové', true);
+    updateMetaTag('og:region', 'Prague', true);
     
     // Czech business specific Open Graph
     if (type === 'website') {
-      updateMetaTag('og:latitude', '50.2406', true);
-      updateMetaTag('og:longitude', '15.4853', true);
-      updateMetaTag('og:street-address', 'Nový Bydžov', true);
-      updateMetaTag('og:locality', 'Nový Bydžov', true);
-      updateMetaTag('og:region', 'Hradec Králové', true);
+      updateMetaTag('og:latitude', '50.0755', true);
+      updateMetaTag('og:longitude', '14.4378', true);
+      updateMetaTag('og:street-address', 'Prague', true);
+      updateMetaTag('og:locality', 'Prague', true);
+      updateMetaTag('og:region', 'Prague', true);
       updateMetaTag('og:postal-code', '504 01', true);
       updateMetaTag('og:country-name', 'Czech Republic', true);
     }
