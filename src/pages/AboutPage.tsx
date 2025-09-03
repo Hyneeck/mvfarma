@@ -74,8 +74,7 @@ const AboutPage = () => {
                   Používáme moderní metody, které aplikujeme s úctou k přírodě a s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
                 </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  Klademe důraz na přírozené prostřední umístění včelstev, do dřevěných úlů zateplených ovčí vlnou. Používáme moderní nástavkový systém, který umožňuje šetrnou péči o včelstva a efektivní získávání medu.
-                </p>
+                  V zootechnice je pro nás důležité přirozené prostředí pro včelsteva s využití všech moderních poznatků. Používáme moderní nástavkový systém, který máme zateplený ovčí vlnou. 
               </div>
             </ScrollAnimation>
 
