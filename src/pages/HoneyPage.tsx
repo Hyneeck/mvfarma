@@ -124,6 +124,13 @@ const HoneyPage = () => {
         <div className="container mx-auto px-5 max-w-[1200px]">
           <ScrollAnimation animation="fade-in">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
+                <LazyImage 
+                  src="/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"
+                  alt="Oddělky pro včelaře - MVFarma"
+                  className="max-w-full max-h-full object-cover rounded-lg"
+                />
+              </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                   Pro včelaře
@@ -131,13 +138,6 @@ const HoneyPage = () => {
                 <p className="text-lg text-foreground leading-relaxed">
                   Po domluvě pro včelaře dodáváme oddělky případně vyzimované oddělky
                 </p>
-              </div>
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                <LazyImage 
-                  src="/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"
-                  alt="Oddělky pro včelaře - MVFarma"
-                  className="max-w-full max-h-full object-cover rounded-lg"
-                />
               </div>
             </div>
           </ScrollAnimation>
