@@ -90,9 +90,8 @@ const ContactPage = () => {
                     <div className="flex items-start">
                       <Clock className="text-primary w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                       <div>
-                       
-                      
-                        </p>
+                        <h3 className="font-bold text-foreground mb-1">Otevírací doba</h3>
+                        <p className="text-muted-foreground">Po domluvě - kontaktujte nás telefonicky nebo e-mailem</p>
                       </div>
                     </div>
                     
