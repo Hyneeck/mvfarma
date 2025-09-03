@@ -84,7 +84,7 @@ const HoneyPage = () => {
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                         <LazyImage 
-                          src={index === 0 ? "/lovable-uploads/spring-honey-real.webp" : "/lovable-uploads/summer-honey-real.webp"}
+                          src={index === 0 ? "/lovable-uploads/7256acbb-b1af-4fe3-845f-1c4b65fc7f9f.png" : "/lovable-uploads/55dd6df7-d6e3-4078-a7fa-d7a004b16421.png"}
                           alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
                           className="max-w-full max-h-full object-cover"
                        />
