@@ -82,8 +82,8 @@ const AboutPage = () => {
             <ScrollAnimation animation="slide-in-right">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src="/lovable-uploads/64b3e077-193e-499a-ba35-1b4651181cc2.png"
-                  alt="Včelnice u statku"
+                  src="/lovable-uploads/95c59643-961e-4414-bbd5-a207ff310f53.png"
+                  alt="Včelařka s plástí medu"
                   className="w-full h-full object-cover"
                 />
               </div>
