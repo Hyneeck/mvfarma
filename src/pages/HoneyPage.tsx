@@ -1,12 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import LazyImage from '../components/LazyImage';
-import { Flower2, TreePine, Heart, Leaf, Award, HelpCircle } from 'lucide-react';
-import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
+import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
 
 const HoneyPage = () => {
   const honeyTypes = [
@@ -111,20 +111,14 @@ const HoneyPage = () => {
             ))}
           </div>
           
-          {/* Question mark in bottom left corner */}
-          <div className="relative mt-8">
-            <div className="absolute bottom-0 left-0">
-              <Popover>
-                <PopoverTrigger asChild>
-                  <button className="text-muted-foreground hover:text-primary transition-colors">
-                    <HelpCircle className="w-6 h-6" />
-                  </button>
-                </PopoverTrigger>
-                <PopoverContent className="w-64">
-                  <p className="text-sm">Objednávky přijímáme přes email.</p>
-                </PopoverContent>
-              </Popover>
-            </div>
+          {/* Order button */}
+          <div className="text-center mt-16">
+            <Link 
+              to="/kontakt"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-medium text-lg inline-block"
+            >
+              Objednávky přijímáme přes email
+            </Link>
           </div>
         </div>
       </section>
