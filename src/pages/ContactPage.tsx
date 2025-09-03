@@ -62,10 +62,11 @@ const ContactPage = () => {
                     <div className="flex items-start">
                       <MapPin className="text-primary w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                       <div>
-                        <h3 className="font-bold text-foreground mb-1">Adresa</h3>
+                        <h3 className="font-bold text-foreground mb-1">Jméno</h3>
                         <p className="text-muted-foreground">
                           MVFarma<br />
-                        
+                          Miroslav Tuka a Vlaďka Hartlová <br />
+                          Registrační číslo včelaře <br />
                         </p>
                       </div>
                     </div>
@@ -89,11 +90,8 @@ const ContactPage = () => {
                     <div className="flex items-start">
                       <Clock className="text-primary w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                       <div>
-                        <h3 className="font-bold text-foreground mb-1">Otevírací doba</h3>
-                        <p className="text-muted-foreground">
-                          Po - Pá: 8:00 - 17:00<br />
-                          So: 9:00 - 15:00<br />
-                          Ne: Zavřeno
+                       
+                      
                         </p>
                       </div>
                     </div>
