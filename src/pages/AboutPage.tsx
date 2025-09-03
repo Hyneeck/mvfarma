@@ -71,10 +71,10 @@ const AboutPage = () => {
                   Naše včelstva
                 </h2>
                 <p className="text-lg text-foreground mb-6 leading-relaxed">
-                  Používáme moderní metody, které aplikujeme s úctou k přírodě a s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
+                  Používáme moderní metody, které aplikujeme s úctou k přírodě a s respektem k tradičním postupům. Dnes se staráme o desítky včelstev na dvou stanovištích na venkovské zahradě a v lese, kde včely nalézají pestrou paletu květů a rostlin pro tvorbu toho nejkvalitnějšího medu.
                 </p>
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  V zootechnice je pro nás důležité přirozené prostředí pro včelsteva s využití všech moderních poznatků. Používáme moderní nástavkový systém, který máme zateplený ovčí vlnou.
+                  V zootechnice je pro nás důležité přirozené prostředí pro včelstva s využití všech moderních poznatků. Používáme moderní nástavkový systém, který máme zateplený ovčí vlnou.
                 </p>
               </div>
             </ScrollAnimation>
