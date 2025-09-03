@@ -5,8 +5,9 @@ import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import LazyImage from '../components/LazyImage';
-import { Flower2, TreePine, Heart, Leaf, Award, HelpCircle } from 'lucide-react';
-import { Popover, PopoverContent, PopoverTrigger } from '../components/ui/popover';
+import { Flower2, TreePine, Heart, Leaf, Award, Users } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HoneyPage = () => {
   const honeyTypes = [
@@ -111,21 +112,39 @@ const HoneyPage = () => {
             ))}
           </div>
           
-          {/* Question mark in bottom left corner */}
-          <div className="relative mt-8">
-            <div className="absolute bottom-0 left-0">
-              <Popover>
-                <PopoverTrigger asChild>
-                  <button className="text-muted-foreground hover:text-primary transition-colors">
-                    <HelpCircle className="w-6 h-6" />
-                  </button>
-                </PopoverTrigger>
-                <PopoverContent className="w-64">
-                  <p className="text-sm">Objednávky přijímáme přes email.</p>
-                </PopoverContent>
-              </Popover>
-            </div>
+          {/* Order button */}
+          <div className="flex justify-center mt-12">
+            <Link to="/kontakt">
+              <Button variant="default" size="lg" className="px-8">
+                Objednávky přijímáme přes email.
+              </Button>
+            </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Beekeeper Services Section */}
+      <section className="py-[clamp(2rem,6vw,6rem)] bg-secondary/20">
+        <div className="container mx-auto px-5 max-w-[1200px]">
+          <ScrollAnimation animation="fade-in">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                  Pro včelaře
+                </h2>
+                <p className="text-lg text-foreground leading-relaxed">
+                  Po domluvě pro včelaře dodáváme oddělky případně vyzimované oddělky
+                </p>
+              </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
+                <LazyImage 
+                  src="/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"
+                  alt="Oddělky pro včelaře - MVFarma"
+                  className="max-w-full max-h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
       </section>
 
