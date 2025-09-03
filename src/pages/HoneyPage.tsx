@@ -105,20 +105,16 @@ const HoneyPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <div className="text-2xl font-bold text-primary">{honey.price}</div>
+                    <div className="text-2xl font-bold text-primary mb-4">{honey.price}</div>
+                    <Link to="/kontakt">
+                      <Button variant="default" size="lg" className="px-8">
+                        Objednávky přijímáme přes email.
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </ScrollAnimation>
             ))}
-          </div>
-          
-          {/* Order button */}
-          <div className="flex justify-center mt-12">
-            <Link to="/kontakt">
-              <Button variant="default" size="lg" className="px-8">
-                Objednávky přijímáme přes email.
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
@@ -147,41 +143,6 @@ const HoneyPage = () => {
           </ScrollAnimation>
         </div>
       </section>
-
-      {/* How Honey is Made Section */}
-      <section className="py-[clamp(2rem,6vw,6rem)] bg-accent">
-        <div className="container mx-auto px-5 max-w-[1200px]">
-          <ScrollAnimation animation="fade-in">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
-                Jak vzniká náš med?
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Od květu k medu - sledujte cestu našeho zlata v úlech rozmístěných po krásné krajině
-              </p>
-            </div>
-          </ScrollAnimation>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { step: "1", title: "Sběr nektaru", description: "Včely sbírají nektar z okolních luk a lesů" },
-              { step: "2", title: "Zrání v úle", description: "Med zraje v plástech až 3 týdny" },
-              { step: "3", title: "Šetrné stáčení", description: "Stáčíme za studena pro zachování kvality" }
-            ].map((process, index) => (
-              <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
-                <div className="text-center bg-card p-8 rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl font-bold text-primary">{process.step}</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{process.title}</h3>
-                  <p className="text-muted-foreground">{process.description}</p>
-                </div>
-              </ScrollAnimation>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
       {/* Fascinating Life of Bees Section */}
       <section className="py-[clamp(2rem,6vw,6rem)] bg-accent">
