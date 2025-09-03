@@ -15,7 +15,7 @@ const HoneyPage = () => {
       description: "Květový med z jarních květů z luk a zahrad, má světlou barvu a jemnější chuť než letní.",
       icon: Flower2,
       price: "200 Kč/950g",
-      features: ["Jemná sladká chuť", "Světlá barva", "Přirozená krystalizace"]
+      features: ["Jemná sladká chuť", "Světlá barva", "Rychlá krystalizace"]
     },
     {
       title: "Letní květový med",
@@ -173,7 +173,8 @@ const HoneyPage = () => {
                 Fascinující život včel
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Včely jsou úžasní tvorové s komplexní společenskou strukturou. Jeden úl může obsahovat až 80 000 včel pracujících jako jeden organismus.
+                Včely jsou úžasní tvorové s komplexní společenskou strukturou. Jeden úl může obsahovat až
+                80 000 včel pracujících jako jeden organismus.
               </p>
             </div>
           </ScrollAnimation>
