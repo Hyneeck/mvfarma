@@ -5,8 +5,8 @@ import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import LazyImage from '../components/LazyImage';
-import { Flower2, TreePine, Heart, Leaf, Award, Users } from 'lucide-react';
-import { Button } from '../components/ui/button';
+import { Flower2, TreePine, Heart, Leaf, Award } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const HoneyPage = () => {
