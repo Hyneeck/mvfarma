@@ -21,7 +21,7 @@ const HoneyPage = () => {
       title: "Letní květový med",
       description: "Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. Obsahuje podíl medovice",
       icon: TreePine,
-      price: "200 Kč/950g",
+      price: "220 Kč/950g",
       features: ["Pikantnější chuť", "Tmavší barva", "Dlouhá trvanlivost"]
     }
   ];

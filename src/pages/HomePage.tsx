@@ -109,7 +109,7 @@ const HomePage = () => {
                      <p className="text-muted-foreground mb-4">
                        Květový med z letní sklizně zejména z luk a lesů
                      </p>
-                    <div className="text-2xl font-bold text-primary">200 Kč/950g</div>
+                    <div className="text-2xl font-bold text-primary">220 Kč/950g</div>
                   </div>
                 </div>
               </Link>
