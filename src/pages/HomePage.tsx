@@ -75,13 +75,11 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                      <LazyImage 
-                       src="/lovable-uploads/honey-jar-400.webp"
-                       srcSet="/lovable-uploads/honey-jar-400.webp 400w, /lovable-uploads/honey-jar-800.webp 800w"
-                       sizes="(max-width: 768px) 100vw, 50vw"
-                       alt="Jarní květový med z MVFarma - světlý med z jarních květů"
-                        className="max-w-full max-h-full object-cover"
-                        priority={true}
-                     />
+                        src="/lovable-uploads/spring-honey.webp"
+                        alt="Jarní květový med z MVFarma - světlý med z jarních květů"
+                         className="max-w-full max-h-full object-cover"
+                         priority={true}
+                      />
                    </div>
                    <div className="p-6">
                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
@@ -101,10 +99,10 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <LazyImage 
-                       src="/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"
-                       alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
-                       className="max-w-full max-h-full object-cover"
-                     />
+                        src="/lovable-uploads/summer-honey.webp"
+                        alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
+                        className="max-w-full max-h-full object-cover"
+                      />
                    </div>
                    <div className="p-6">
                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>

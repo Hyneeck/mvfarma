@@ -82,12 +82,10 @@ const HoneyPage = () => {
                 <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                       <LazyImage 
-                         src={index === 0 ? "/lovable-uploads/honey-jar-400.webp" : "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png"}
-                         srcSet={index === 0 ? "/lovable-uploads/honey-jar-400.webp 400w, /lovable-uploads/honey-jar-800.webp 800w" : undefined}
-                         sizes={index === 0 ? "(max-width: 1024px) 100vw, 50vw" : undefined}
-                         alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
-                         className="max-w-full max-h-full object-cover"
+                        <LazyImage 
+                          src={index === 0 ? "/lovable-uploads/spring-honey.webp" : "/lovable-uploads/summer-honey.webp"}
+                          alt={index === 0 ? "Jarní květový med z MVFarma - světlý med z jarních květů" : "Letní květový med z MVFarma - tmavší med z letní sklizně"}
+                          className="max-w-full max-h-full object-cover"
                        />
                     </div>
                   </div>

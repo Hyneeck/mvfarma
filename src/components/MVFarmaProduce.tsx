@@ -36,12 +36,10 @@ const MVFarmaProduce = () => {
             <ScrollAnimation key={index} animation="scale-in" delay={index * 100}>
               <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="aspect-[3/2] relative overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
-                   <LazyImage 
-                     src={index === 0 ? "/lovable-uploads/cf307c39-af45-4ec9-aef0-5c892a35a724.png" : "/lovable-uploads/honey-jar-400.webp"}
-                     srcSet={index === 0 ? undefined : "/lovable-uploads/honey-jar-400.webp 400w, /lovable-uploads/honey-jar-800.webp 800w"}
-                     sizes={index === 0 ? undefined : "(max-width: 768px) 100vw, 50vw"}
-                     alt={index === 0 ? "Letní květový med z MVFarma - tmavší med z letní sklizně" : "Jarní květový med z MVFarma - světlý med z jarních květů"}
-                     className="max-w-full max-h-full object-cover"
+                    <LazyImage 
+                      src={index === 0 ? "/lovable-uploads/summer-honey.webp" : "/lovable-uploads/spring-honey.webp"}
+                      alt={index === 0 ? "Letní květový med z MVFarma - tmavší med z letní sklizně" : "Jarní květový med z MVFarma - světlý med z jarních květů"}
+                      className="max-w-full max-h-full object-cover"
                    />
                 </div>
                 <div className="p-6">
