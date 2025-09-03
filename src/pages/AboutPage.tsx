@@ -55,8 +55,8 @@ const AboutPage = () => {
                 
                 <div className="grid grid-cols-1 gap-4">
                   <div className="text-center p-4 bg-card rounded-lg border border-border">
-                    <div className="text-2xl font-bold text-primary">30+</div>
-                    <div className="text-sm text-muted-foreground">Let zkušeností</div>
+                    <div className="text-2xl font-bold text-primary">Několik generací zkušeností</div>
+    
                   </div>
                 </div>
               </div>
