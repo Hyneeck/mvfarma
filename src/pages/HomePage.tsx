@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Link } from 'react-router-dom';
-import MVFarmaHeader from '../components/MVFarmaHeader';
-import MVFarmaHero from '../components/MVFarmaHero';
-import MVFarmaFooter from '../components/MVFarmaFooter';
-import ScrollAnimation from '../components/ScrollAnimation';
 import SEO from '../components/SEO';
 import StructuredData from '../components/StructuredData';
 import LazyImage from '../components/LazyImage';
-import { Flower2, TreePine } from 'lucide-react';
+
+// Lazy load non-critical components to reduce initial bundle
+const MVFarmaHeader = lazy(() => import('../components/MVFarmaHeader'));
+const MVFarmaHero = lazy(() => import('../components/MVFarmaHero'));
+const MVFarmaFooter = lazy(() => import('../components/MVFarmaFooter'));
+const ScrollAnimation = lazy(() => import('../components/ScrollAnimation'));
 
 const HomePage = () => {
   return (
@@ -49,20 +50,27 @@ const HomePage = () => {
           ]
         }}
       />
-      <MVFarmaHeader />
-      <MVFarmaHero />
+      <Suspense fallback={<div className="h-20 bg-background"></div>}>
+        <MVFarmaHeader />
+      </Suspense>
+      <Suspense fallback={<div className="h-screen bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+        <MVFarmaHero />
+      </Suspense>
       
       {/* Product Preview Section */}
       <section className="py-[clamp(2rem,6vw,6rem)] bg-accent">
         <div className="container mx-auto px-5 max-w-[1200px]">
-          <ScrollAnimation animation="fade-in">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2>
-            </div>
-          </ScrollAnimation>
+          <Suspense fallback={<div className="text-center mb-16"><h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2></div>}>
+            <ScrollAnimation animation="fade-in">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Naše medy</h2>
+              </div>
+            </ScrollAnimation>
+          </Suspense>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-            <ScrollAnimation animation="slide-in-left">
+            <Suspense fallback={<div className="bg-card rounded-lg border border-border overflow-hidden h-96 animate-pulse"></div>}>
+              <ScrollAnimation animation="slide-in-left">
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
@@ -85,8 +93,10 @@ const HomePage = () => {
                 </div>
               </Link>
             </ScrollAnimation>
+            </Suspense>
 
-            <ScrollAnimation animation="slide-in-right" delay={100}>
+            <Suspense fallback={<div className="bg-card rounded-lg border border-border overflow-hidden h-96 animate-pulse"></div>}>
+              <ScrollAnimation animation="slide-in-right" delay={100}>
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
@@ -106,10 +116,12 @@ const HomePage = () => {
                 </div>
               </Link>
             </ScrollAnimation>
+            </Suspense>
           </div>
 
           {/* CTA Section */}
-          <ScrollAnimation animation="fade-in">
+          <Suspense fallback={<div className="text-center bg-card/50 p-8 md:p-12 rounded-lg border border-border h-64 animate-pulse"></div>}>
+            <ScrollAnimation animation="fade-in">
             <div className="text-center bg-card/50 p-8 md:p-12 rounded-lg border border-border">
               <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                 Chcete se dozvědět více?
@@ -133,10 +145,13 @@ const HomePage = () => {
               </div>
             </div>
           </ScrollAnimation>
+          </Suspense>
         </div>
       </section>
 
-      <MVFarmaFooter />
+      <Suspense fallback={<div className="bg-muted h-96"></div>}>
+        <MVFarmaFooter />
+      </Suspense>
     </div>
   );
 };

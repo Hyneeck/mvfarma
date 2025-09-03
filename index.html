@@ -20,13 +20,17 @@
     <link rel="preload" href="/lovable-uploads/hero-background.webp" as="image" fetchpriority="high" />
     <link rel="modulepreload" href="/src/main.tsx" />
     
-    <!-- Preload critical JS chunks to reduce dependency chains -->
-    <link rel="modulepreload" href="/src/pages/HomePage.tsx" />
-    <link rel="modulepreload" href="/src/components/MVFarmaHeader.tsx" />
-    <link rel="modulepreload" href="/src/components/MVFarmaHero.tsx" />
-    <link rel="modulepreload" href="/src/components/MVFarmaFooter.tsx" />
+    <!-- Preload only critical path JS chunks -->
     <link rel="modulepreload" href="/src/components/SEO.tsx" />
+    <link rel="modulepreload" href="/src/components/StructuredData.tsx" />
     <link rel="modulepreload" href="/src/components/LazyImage.tsx" />
+    
+    <!-- Defer non-critical chunks with prefetch -->
+    <link rel="prefetch" href="/src/pages/HomePage.tsx" />
+    <link rel="prefetch" href="/src/components/MVFarmaHeader.tsx" />
+    <link rel="prefetch" href="/src/components/MVFarmaHero.tsx" />
+    <link rel="prefetch" href="/src/components/MVFarmaFooter.tsx" />
+    <link rel="prefetch" href="/src/components/ScrollAnimation.tsx" />
     
     <!-- Critical LCP optimizations -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
