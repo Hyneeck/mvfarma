@@ -43,7 +43,7 @@ const HomePage = () => {
           },
           openingHours: "Mo-Fr 08:00-17:00",
           priceRange: "200-300 CZK",
-          image: "https://mvfarma.cz/lovable-uploads/hero-background.webp",
+          image: "https://mvfarma.cz/lovable-uploads/hero-background-optimized.webp",
           sameAs: [
             "https://www.facebook.com/mvfarma",
             "https://www.instagram.com/mvfarma"
@@ -75,7 +75,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                      <LazyImage 
-                        src="/lovable-uploads/spring-honey-real.webp"
+                        src="/lovable-uploads/spring-honey-400.webp"
                         alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                          className="max-w-full max-h-full object-cover"
                          priority={true}

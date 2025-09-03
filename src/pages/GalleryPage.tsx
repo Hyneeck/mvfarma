@@ -59,7 +59,7 @@ const GalleryPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/hero-background.webp')"}}>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/hero-background-optimized.webp')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
