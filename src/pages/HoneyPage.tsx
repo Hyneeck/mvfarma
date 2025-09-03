@@ -126,8 +126,8 @@ const HoneyPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-8">
                 <LazyImage 
-                  src="/lovable-uploads/beekeeper-with-frame.png"
-                  alt="Včelař MVFarma s plástí plnou včel"
+                  src="/lovable-uploads/6c986c9a-0c90-493d-8ee8-24fa4f6ca42c.png"
+                  alt="Oddělky pro včelaře - MVFarma"
                   className="max-w-full max-h-full object-cover rounded-lg"
                 />
               </div>

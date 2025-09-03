@@ -39,10 +39,10 @@ const GalleryPage = () => {
       description: "Úly umístěné v blízkosti tradičního statku"
     },
     {
-      src: "/lovable-uploads/8921af79-298e-4b88-8a4c-49c4eb38c9e2.png",
-      alt: "Sklenice medu mezi květy",
-      title: "Sklenice medu mezi květy",
-      description: "Naše sklizně medu v krásném přírodním prostředí"
+      src: "/lovable-uploads/97d77a5f-2635-4ebe-84d3-6931c7d78f17.png",
+      alt: "Práce s úly",
+      title: "Práce s úly",
+      description: "Kontrola a údržba včelích úlů v přírodě"
     }
   ];
 
