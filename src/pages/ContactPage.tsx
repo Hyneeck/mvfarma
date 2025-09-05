@@ -29,15 +29,15 @@ const ContactPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="contact-hero-section">
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/hero-background-compressed.webp')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <Suspense fallback={<div className="opacity-0">Loading...</div>}>
             <ScrollAnimation animation="fade-in">
-              <h1 className="contact-hero-title">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Kontaktujte nás
               </h1>
-              <p className="contact-hero-subtitle">
+              <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto">
                 Rádi odpovíme na vaše dotazy a těšíme se na setkání s vámi
               </p>
             </ScrollAnimation>
