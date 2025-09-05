@@ -73,20 +73,20 @@ const HomePage = () => {
               <ScrollAnimation animation="slide-in-left">
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-4">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                       <LazyImage 
-                         src="/lovable-uploads/summer-honey-real.webp"
-                         alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
+                         src="/lovable-uploads/spring-honey-optimized.webp"
+                         alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                           className="max-w-full max-h-full object-cover"
                           priority={true}
                        />
                    </div>
                    <div className="p-6">
-                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
                      <p className="text-muted-foreground mb-4">
-                       Květový med z letní sklizně zejména z luk a lesů, má lehce tmavší barvu než jarní. obsahuje podíl medovice, pikantnější
+                       Světlý med z jarních květů z luk a zahrad
                      </p>
-                    <div className="text-2xl font-bold text-primary">Od 180 Kč</div>
+                    <div className="text-2xl font-bold text-primary">200 Kč/950g</div>
                   </div>
                 </div>
               </Link>
@@ -97,25 +97,25 @@ const HomePage = () => {
               <ScrollAnimation animation="slide-in-right" delay={100}>
               <Link to="/medy-a-vcely" className="group block">
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-secondary/20 flex items-center justify-center p-4">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <LazyImage 
-                        src="/lovable-uploads/spring-honey-optimized.webp"
-                        alt="Jarní květový med z MVFarma - světlý med z jarních květů"
+                        src="/lovable-uploads/summer-honey-real.webp"
+                        alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
                         className="max-w-full max-h-full object-cover"
                       />
                    </div>
                    <div className="p-6">
-                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Jarní květový med</h3>
+                     <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">Letní květový med</h3>
                      <p className="text-muted-foreground mb-4">
-                       Světlý med z jarních květů z luk a zahrad - jemná sladká chuť
+                       Květový med z letní sklizně zejména z luk a lesů
                      </p>
-                    <div className="text-2xl font-bold text-primary">200 Kč za sklenici 950g</div>
-                   </div>
-                 </div>
-               </Link>
-             </ScrollAnimation>
-             </Suspense>
-           </div>
+                    <div className="text-2xl font-bold text-primary">220 Kč/950g</div>
+                  </div>
+                </div>
+              </Link>
+            </ScrollAnimation>
+            </Suspense>
+          </div>
 
           {/* CTA Section */}
           <Suspense fallback={<div className="text-center bg-card/50 p-8 md:p-12 rounded-lg border border-border h-64 animate-pulse"></div>}>
