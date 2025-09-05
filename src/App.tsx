@@ -10,7 +10,7 @@ const ToasterComponent = lazy(() => import("@/components/ui/toaster").then(m => 
 const SonnerComponent = lazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 // Lazy load all page components for code splitting
-const HomePage = lazy(() => import("./pages/Index"));
+const HomePage = lazy(() => import("./pages/HomePage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const HoneyPage = lazy(() => import("./pages/HoneyPage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
