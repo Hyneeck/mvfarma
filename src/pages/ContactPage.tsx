@@ -1,23 +1,16 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import MVFarmaHeader from '../components/MVFarmaHeader';
 import MVFarmaFooter from '../components/MVFarmaFooter';
-import { MapPin, Phone, Mail, Clock, HelpCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, HelpCircle } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast";
 
-// Lazy load non-critical components and hooks for better bundle splitting
 const ScrollAnimation = lazy(() => import('../components/ScrollAnimation'));
 const ContactForm = lazy(() => import('../components/ContactForm'));
-const Popover = lazy(() => import('../components/ui/popover').then(module => ({ default: module.Popover })));
-const PopoverContent = lazy(() => import('../components/ui/popover').then(module => ({ default: module.PopoverContent })));
-const PopoverTrigger = lazy(() => import('../components/ui/popover').then(module => ({ default: module.PopoverTrigger })));
 
 const ContactPage = () => {
-  // Lazy load toast functionality to reduce initial bundle
-  const handleSubmit = async (formData: { name: string; email: string; message: string }) => {
-    // Dynamically import toast only when needed
-    const { useToast } = await import("@/components/ui/use-toast");
-    const { toast } = useToast();
-    
-    // In a real app, you would send this data to your backend
+  const { toast } = useToast();
+  
+  const handleSubmit = (formData: { name: string; email: string; message: string }) => {
     toast({
       title: "Zpráva odeslána!",
       description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
@@ -29,7 +22,7 @@ const ContactPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/hero-background-compressed.webp')"}}>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1726fdb9-eb01-46e0-b249-64ccec1b8d09.png')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <Suspense fallback={<div className="opacity-0">Loading...</div>}>
@@ -88,21 +81,9 @@ const ContactPage = () => {
                     </div>
 
                     
-                    {/* Question mark popup - lazy loaded */}
                     <div className="flex items-center gap-2 mt-6">
-                      <Suspense fallback={<HelpCircle className="w-5 h-5 text-muted-foreground" />}>
-                        <Popover>
-                          <PopoverTrigger asChild>
-                            <button className="text-muted-foreground hover:text-primary transition-colors">
-                              <HelpCircle className="w-5 h-5" />
-                            </button>
-                          </PopoverTrigger>
-                          <PopoverContent className="w-80">
-                            <p className="text-sm">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</p>
-                          </PopoverContent>
-                        </Popover>
-                      </Suspense>
-                      <span className="text-sm text-muted-foreground">Máte dotazy?</span>
+                      <HelpCircle className="w-5 h-5 text-muted-foreground" />
+                      <span className="text-sm text-muted-foreground">Pokud vás cokoliv zajímá nebo si chcete popovídat o medu a výchově včel, neváhejte se zeptat a napsat nám email.</span>
                     </div>
                   </div>
 
