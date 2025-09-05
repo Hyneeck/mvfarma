@@ -22,7 +22,7 @@ const ContactPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/1726fdb9-eb01-46e0-b249-64ccec1b8d09.png')"}}>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/ee1c2855-0e47-4b86-acc3-a1d23cc1f1e2.png')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <Suspense fallback={<div className="opacity-0">Loading...</div>}>
