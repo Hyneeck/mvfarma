@@ -75,7 +75,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center p-4">
                       <LazyImage 
-                         src="/lovable-uploads/spring-honey-optimized.webp"
+                         src="/lovable-uploads/19f91f42-4a64-47e8-aba3-9663c0418e84.png"
                          alt="Jarní květový med z MVFarma - světlý med z jarních květů"
                           className="max-w-full max-h-full object-cover"
                           priority={true}
@@ -99,7 +99,7 @@ const HomePage = () => {
                 <div className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-[4/3] bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-4">
                      <LazyImage 
-                        src="/lovable-uploads/summer-honey-real.webp"
+                        src="/lovable-uploads/fb01f1c8-fc71-4127-be8b-ae31dfa6ae0c.png"
                         alt="Letní květový med z MVFarma - tmavší med z letní sklizně"
                         className="max-w-full max-h-full object-cover"
                       />
