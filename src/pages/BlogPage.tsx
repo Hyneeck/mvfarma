@@ -25,7 +25,7 @@ const BlogPage = () => {
       <MVFarmaHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/beehive-hero-background.png')"}}>
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/e924b865-f989-43d6-8bcd-2053f44f37e9.png')"}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="container mx-auto px-5 relative z-10 text-center">
           <ScrollAnimation animation="fade-in">
